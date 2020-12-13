@@ -30,6 +30,7 @@ do {
         //_targetArray = (list _radsweep);
         //_targetArray = vehicles - allDead;
 
+        _targetArray = vehicles - allDead;
         _datalinkArray = listRemoteTargets west;
         {
             _targetArray pushback(_x select 0);

@@ -439,7 +439,7 @@
       <!--	General inertia changed from 8.14 to 0.3 - BM 10Oct20 -->
       <!--	General inertia changed from 0.3 to 0.15 - BM 6Nov20 -->
       <General inertia="0.15" />
-      <Performance emergencyPowerHP="1902" maxTorque="1580" rotationResistance="0.000000"/>
+      <Performance emergencyPowerHP="2102" maxTorque="1580" rotationResistance="0.000000"/>
       <!--	Offset changed from 150 to 300 - BM 7Oct20 -->
       <!--	Offset changed from 300 to 75 - BM 7Oct20 -->
       <!--	P = 1.0, I = 1.5, D = 0.1 changed to P = 0.5, I = 1.5, D = 0.0 - BM 10Oct20 -->
@@ -456,7 +456,7 @@
     <Engine type="ConstantRPMEngine">
       <DebugInfo printDebugInfo="false" />
       <General inertia="0.15" />
-      <Performance emergencyPowerHP="1902" maxTorque="1580" rotationResistance="0.000000"/>
+      <Performance emergencyPowerHP="2102" maxTorque="1580" rotationResistance="0.000000"/>
       <ControllerParams P="0.75" I="1.5" D="0.0" offset="75" targetRPM="21109" />
     </Engine>
 

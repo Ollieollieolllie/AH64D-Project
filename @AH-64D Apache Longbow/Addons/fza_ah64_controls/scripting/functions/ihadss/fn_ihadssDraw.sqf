@@ -730,7 +730,7 @@ if (currentweapon _heli == "Laserdesignator_mounted") then {
 
 if (_heli getVariable "fza_ah64_fcrcscope") then {
     _num = 190; {
-        if (_num > 205) exitwith {};
+        if (_num > 319) exitwith {};
         _coords = worldtoscreen(getpos _x);
         _type = "\fza_ah64_US\tex\ICONS\ah64_hc_pfz.paa";
 
@@ -773,7 +773,7 @@ if (_heli getVariable "fza_ah64_fcrcscope") then {
 
     if (_num > (count fza_ah64_Cscopelist + 189)) then {
         while {
-            (_num < 206)
+            (_num < 320)
         }
         do {
             _coords = [-100, -100];
@@ -786,7 +786,7 @@ if (_heli getVariable "fza_ah64_fcrcscope") then {
 } else {
     _num = 190;
     while {
-        (_num < 206)
+        (_num < 320)
     }
     do {
         _coords = [-100, -100];
@@ -945,39 +945,39 @@ if ((_heli getVariable "fza_ah64_hmdfsmode" != "trans" && _heli getVariable "fza
     {
         ((uiNameSpace getVariable "fza_ah64_raddisp") displayCtrl _x) ctrlSetPosition[100, 10, 100];
     }
-    foreach[250, 251, 252, 253, 254, 255, 256, 257, 258, 259, 260, 261, 262, 263, 264, 265, 266, 267, 268, 269];
+    foreach[341, 342, 342, 344, 345, 346, 347, 348, 349, 350, 351, 352, 353, 354, 355, 356, 357, 358, 359, 360];
 } else {
     if (_heli getVariable "fza_ah64_hmdfsmode" == "trans") then {
-        [269, (_pbvar select 0), (_pbvar select 1)] call _autohide;
+        [360, (_pbvar select 0), (_pbvar select 1)] call _autohide;
     } else {
         ((uiNameSpace getVariable "fza_ah64_raddisp") displayCtrl 269) ctrlSetPosition[100, 10, 100];
     };
 
     if (_heli getVariable "fza_ah64_hmdfsmode" == "cruise") then {
-        [250, (_pbvar select 0), (_pbvar select 1)] call _autohide;
-        [251, (_pbvar select 0) - 10, (_pbvar select 1)] call _autohide;
-        [252, (_pbvar select 0) - 20, (_pbvar select 1)] call _autohide;
-        [253, (_pbvar select 0) - 30, (_pbvar select 1)] call _autohide;
-        [254, (_pbvar select 0) - 40, (_pbvar select 1)] call _autohide;
-        [255, (_pbvar select 0) - 50, (_pbvar select 1)] call _autohide;
-        [256, (_pbvar select 0) - 60, (_pbvar select 1)] call _autohide;
-        [257, (_pbvar select 0) - 70, (_pbvar select 1)] call _autohide;
-        [258, (_pbvar select 0) - 80, (_pbvar select 1)] call _autohide;
-        [259, (_pbvar select 0) - 90, (_pbvar select 1)] call _autohide;
-        [260, (_pbvar select 0) + 10, (_pbvar select 1)] call _autohide;
-        [261, (_pbvar select 0) + 20, (_pbvar select 1)] call _autohide;
-        [262, (_pbvar select 0) + 30, (_pbvar select 1)] call _autohide;
-        [263, (_pbvar select 0) + 40, (_pbvar select 1)] call _autohide;
-        [264, (_pbvar select 0) + 50, (_pbvar select 1)] call _autohide;
-        [265, (_pbvar select 0) + 60, (_pbvar select 1)] call _autohide;
-        [266, (_pbvar select 0) + 70, (_pbvar select 1)] call _autohide;
-        [267, (_pbvar select 0) + 80, (_pbvar select 1)] call _autohide;
-        [268, (_pbvar select 0) + 90, (_pbvar select 1)] call _autohide;
+        [341, (_pbvar select 0), (_pbvar select 1)] call _autohide;
+        [342, (_pbvar select 0) - 10, (_pbvar select 1)] call _autohide;
+        [343, (_pbvar select 0) - 20, (_pbvar select 1)] call _autohide;
+        [344, (_pbvar select 0) - 30, (_pbvar select 1)] call _autohide;
+        [345, (_pbvar select 0) - 40, (_pbvar select 1)] call _autohide;
+        [346, (_pbvar select 0) - 50, (_pbvar select 1)] call _autohide;
+        [347, (_pbvar select 0) - 60, (_pbvar select 1)] call _autohide;
+        [348, (_pbvar select 0) - 70, (_pbvar select 1)] call _autohide;
+        [349, (_pbvar select 0) - 80, (_pbvar select 1)] call _autohide;
+        [350, (_pbvar select 0) - 90, (_pbvar select 1)] call _autohide;
+        [351, (_pbvar select 0) + 10, (_pbvar select 1)] call _autohide;
+        [352, (_pbvar select 0) + 20, (_pbvar select 1)] call _autohide;
+        [353, (_pbvar select 0) + 30, (_pbvar select 1)] call _autohide;
+        [354, (_pbvar select 0) + 40, (_pbvar select 1)] call _autohide;
+        [355, (_pbvar select 0) + 50, (_pbvar select 1)] call _autohide;
+        [356, (_pbvar select 0) + 60, (_pbvar select 1)] call _autohide;
+        [357, (_pbvar select 0) + 70, (_pbvar select 1)] call _autohide;
+        [358, (_pbvar select 0) + 80, (_pbvar select 1)] call _autohide;
+        [359, (_pbvar select 0) + 90, (_pbvar select 1)] call _autohide;
     } else {
         {
             ((uiNameSpace getVariable "fza_ah64_raddisp") displayCtrl _x) ctrlSetPosition[100, 10, 100];
         }
-        foreach[250, 251, 252, 253, 254, 255, 256, 257, 258, 259, 260, 261, 262, 263, 264, 265, 266, 267, 268];
+        foreach[341, 342, 342, 344, 345, 346, 347, 348, 349, 350, 351, 352, 353, 354, 355, 356, 357, 358, 359];
     };
 
     _pitch = 0;
@@ -993,7 +993,7 @@ if ((_heli getVariable "fza_ah64_hmdfsmode" != "trans" && _heli getVariable "fza
     _vecuz = cos(_pitch) * cos(_bank); {
         ((uiNameSpace getVariable "fza_ah64_raddisp") displayCtrl _x) ctrlSetModelDirAndUp[[_vecdx, _vecdy, _vecdz], [_vecux, _vecuy, _vecuz]];
     }
-    foreach[250, 251, 252, 253, 254, 255, 256, 257, 258, 259, 260, 261, 262, 263, 264, 265, 266, 267, 268, 269];
+    foreach[341, 342, 342, 344, 345, 346, 347, 348, 349, 350, 351, 352, 353, 354, 355, 356, 357, 358, 359, 360];
 };
 
 //HUD HEADINGS
