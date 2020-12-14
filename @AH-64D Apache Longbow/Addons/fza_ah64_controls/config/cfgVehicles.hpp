@@ -35,7 +35,7 @@ class CfgVehicles
 	
 		side=1;
 		scope=0;
-		displayName="AH-64D";
+		displayName="WAH-Mk1 Apache-Longbow";
 		driverlefthandanimname = "p_collective";
 		driverleftleganimname = "pedalL";
 		driverrighthandanimname = "p_cyclic";
@@ -943,7 +943,7 @@ class CfgVehicles
 		side=1;
 		scope=2;
 		author="Franze, Nodunit, Sacha 'Voodooflies' Oropeza, Keplager, mattysmith22 & Community";
-		displayName="AH-64D Apache Longbow";
+		displayName="WAH-MK1 Apache-Longbow";
 		model="\fza_ah64_US\fza_ah64d_b2.p3d";
 		ejectDeadCargo=false;
 		ejectdeadgunner = false;
@@ -2823,7 +2823,7 @@ initPhase=0;
 		side=1;
 		scope=2;
 		author="Franze, Nodunit, Sacha 'Voodooflies' Oropeza, Keplager, mattysmith22 & Community";
-		displayName="AH-64D Apache";
+		displayName="AH-64A";
 	};
 
 	/////////////////////////////////////////////////
