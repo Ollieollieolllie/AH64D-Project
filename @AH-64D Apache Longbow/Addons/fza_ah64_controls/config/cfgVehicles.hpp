@@ -1099,6 +1099,17 @@ class CfgVehicles
 						minfov = 0.01;
 						opticsdisplayname = "N";
 					};
+					class SuperNarrow: Wide
+					{
+						gunneropticsmodel = "\fza_ah64_us\fza_ah64_optics_empty";
+						directionStabilized = 1;
+						stabilizedInAxes = 3;
+						opticStabilized=1;
+						initfov = 0.005;
+						maxfov = 0.005;
+						minfov = 0.005;
+						opticsdisplayname = "s";
+					};
 				};
 				class OpticsOut
 				{
