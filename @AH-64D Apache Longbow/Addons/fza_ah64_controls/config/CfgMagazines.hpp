@@ -5,10 +5,10 @@ class CfgMagazines
 	class 24Rnd_PG_missiles;
 	class 24Rnd_missiles;
 	
-	class 60Rnd_CMFlareMagazine: CA_Magazine
+	class 192Rnd_CMFlareMagazine: CA_Magazine
 	{
 		author = "$STR_A3_Bohemia_Interactive";
-		count = 60;
+		count = 192;
 		ammo = "fza_ah64_flare_shot";
 		initSpeed = 30;
 	};

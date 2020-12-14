@@ -1873,7 +1873,7 @@ _heli removemagazines "fza_auxtank_230_2";
 _heli removemagazines "fza_auxtank_230_3";
 _heli removemagazines "fza_auxtank_230_4";
 //CM
-_heli removeMagazineTurret ["60Rnd_CMFlareMagazine",[-1]];
+_heli removeMagazineTurret ["192Rnd_CMFlareMagazine",[-1]];
 
 _heli vehiclechat "Rearming in progress (0%)...";
 
@@ -2376,7 +2376,7 @@ if (fza_ah64_hardpoint5 == 14 && fza_ah64_auxtank_qty > 0) then {_heli addmagazi
 
 //COUNTERMESURES
 
-if ("fza_CMFlareLauncher" in (_heli weaponsTurret [-1])) then {_heli addMagazineTurret ["60Rnd_CMFlareMagazine",[-1]]; _heliweight = _heliweight + 10;};
+if ("fza_CMFlareLauncher" in (_heli weaponsTurret [-1])) then {_heli addMagazineTurret ["192Rnd_CMFlareMagazine",[-1]]; _heliweight = _heliweight + 10;};
 _heliweight = _heliweight + 5; //chaff countermeasure
 fza_ah64_burst = 0;
 fza_ah64_gunheat = 0;

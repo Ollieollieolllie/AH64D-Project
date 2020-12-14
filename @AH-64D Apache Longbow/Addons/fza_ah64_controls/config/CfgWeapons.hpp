@@ -14,7 +14,7 @@ class CfgWeapons
 	{
 		scope = 2;
 		displayName = "$STR_A3_CMFlareLauncher0";
-		magazines[] = {"60Rnd_CMFlareMagazine"};
+		magazines[] = {"192Rnd_CMFlareMagazine"};
 		magazineReloadTime = 0.200000;
 		simulation = "cmlauncher";
 		modes[] = {"Single"};
