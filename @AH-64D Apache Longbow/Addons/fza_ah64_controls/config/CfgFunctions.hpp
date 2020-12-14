@@ -191,6 +191,7 @@ class CfgFunctions
 			class weaponRocketAlign {R;};
 			class weaponSelectFireMode {R;};
 			class weaponTurretAim {R;};
+			class weaponSubmunition {R;};
 		};
 		class functions
 		{
@@ -205,6 +206,12 @@ class CfgFunctions
 			class addKeybind {R;};
 			class playAudio { R; description = "Plays audio file"; };
 			class compensateSafezone { R;};
+		};
+		class Ase
+		{
+			file = "\fza_ah64_controls\scripting\functions\ase";
+			class Asejammer {R;};
+			class Aseflaredeploy {R;};
 		};
 	};
 };
