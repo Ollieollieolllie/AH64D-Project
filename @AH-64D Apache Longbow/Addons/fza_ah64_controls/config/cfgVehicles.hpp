@@ -978,7 +978,7 @@ class CfgVehicles
 		threat[] = {1,1,0.700000};
 		armor=60;
 		memorypointcm[] = {"flare_beg","flare1_beg"};
-		memorypointcmdir[] = {"flare_end","flare2_end"};
+		memorypointcmdir[] = {"flare_end","flare1_end"};
 		weapons[] = {"fza_CMFlareLauncher"};
 		magazines[] = {"192Rnd_CMFlareMagazine"};
 		lockdetectionsystem = "8+4";

@@ -51,6 +51,39 @@ class CfgWeapons
 			maxRange = 2;
 			maxRangeProbab = 0.010000;
 		};
+		class burst
+		{
+			displayName = "$STR_A3_CMFlareLauncher_weapon_mode_Burst_name";
+			reloadTime = 0.20000;
+			burst = 5;
+			autoFire = 0;
+			useAction = 0;
+			useActionTitle = 0;
+			soundContinuous = 0;
+			artilleryDispersion = 0;
+			artilleryCharge = 0;
+			textureType = "burst";
+			recoil = "Empty";
+			recoilProne = "";
+			sounds[] = {"StandardSound"};
+
+			class StandardSound {
+				begin1[] = {"\fza_ah64_us\audio\Flares.ogg", 1.000000, 1, 300};
+				soundBegin[] = {"begin1", 1};
+			};
+			showToPlayer = 1;
+			multiplier = 2;
+			soundBurst = 0;
+			dispersion = 0.200000;
+			aiRateOfFire = 1;
+			aiRateOfFireDistance = 10;
+			minRange = 0;
+			minRangeProbab = 0.010000;
+			midRange = 1;
+			midRangeProbab = 0.010000;
+			maxRange = 2;
+			maxRangeProbab = 0.010000;
+		};
 	};
 	
 	///////////////////////////////////////////////////////////////////////

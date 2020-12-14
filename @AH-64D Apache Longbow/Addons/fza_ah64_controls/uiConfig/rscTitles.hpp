@@ -4445,7 +4445,7 @@ class RscTitles
 			};
 					class fza_ah64_raddisp_fov
 					{
-				idc = 206;
+				idc = 406;
 				type = 0;
 				colorText[] = {0.1, 1, 0, 1};
 				font = "EtelkaMonospaceProBold";
@@ -4460,7 +4460,7 @@ class RscTitles
 			};
 					class fza_ah64_alternatesensor
 					{
-					idc = 207;
+					idc = 407;
 					text = "\fza_ah64_US\tex\HDU\mark_alt_sens.paa";
 					type = 0;
 					colorText[] = {1, 1, 1, 1};

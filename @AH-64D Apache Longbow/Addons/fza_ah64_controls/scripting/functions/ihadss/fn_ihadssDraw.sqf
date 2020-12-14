@@ -171,7 +171,7 @@ if (_heli animationphase "plt_apu" > 0.5 && !(_heli getVariable "fza_ah64_monocl
         _ihadssidx = 121;
 
         while {
-            (_ihadssidx < 206)
+            (_ihadssidx < 406)
         }
         do {
             ((uiNameSpace getVariable "fza_ah64_raddisp") displayCtrl _ihadssidx) ctrlSetTextColor fza_ah64_hducolor;
@@ -273,11 +273,11 @@ if (cameraView == "GUNNER" && player == gunner _heli && (_heli animationphase "p
     ((uiNameSpace getVariable "fza_ah64_raddisp") displayCtrl 133) ctrlSetTextColor[(fza_ah64_hducolor select 1), (fza_ah64_hducolor select 1), (fza_ah64_hducolor select 1), 1];
     ((uiNameSpace getVariable "fza_ah64_raddisp") displayCtrl 134) ctrlSetTextColor[(fza_ah64_hducolor select 1), (fza_ah64_hducolor select 1), (fza_ah64_hducolor select 1), 1];
     ((uiNameSpace getVariable "fza_ah64_raddisp") displayCtrl 137) ctrlSetTextColor[(fza_ah64_hducolor select 1), (fza_ah64_hducolor select 1), (fza_ah64_hducolor select 1), 1];
-    ((uiNameSpace getVariable "fza_ah64_raddisp") displayCtrl 207) ctrlSetTextColor[(fza_ah64_hducolor select 1), (fza_ah64_hducolor select 1), (fza_ah64_hducolor select 1), 1];
+    ((uiNameSpace getVariable "fza_ah64_raddisp") displayCtrl 407) ctrlSetTextColor[(fza_ah64_hducolor select 1), (fza_ah64_hducolor select 1), (fza_ah64_hducolor select 1), 1];
 
     _ihadssidx = 146;
     while {
-        (_ihadssidx < 207)
+        (_ihadssidx < 407)
     }
     do {
         if (!(_ihadssidx == 135 || _ihadssidx == 136 || _ihadssidx == 182 || _ihadssidx == 186 || _ihadssidx == 123 || _ihadssidx == 124 || _ihadssidx == 125 || _ihadssidx == 120)) then {
@@ -343,7 +343,7 @@ if (cameraView == "GUNNER" && player == gunner _heli && (_heli animationphase "p
     ((uiNameSpace getVariable "fza_ah64_raddisp") displayCtrl 124) ctrlCommit 0;
     ((uiNameSpace getVariable "fza_ah64_raddisp") displayCtrl 125) ctrlsetposition[0.18, 0.5, 0.5, 0.12];
     ((uiNameSpace getVariable "fza_ah64_raddisp") displayCtrl 125) ctrlCommit 0;
-    ((uiNameSpace getVariable "fza_ah64_raddisp") displayCtrl 206) ctrlSetTextColor[0, 0, 0, 0];
+    ((uiNameSpace getVariable "fza_ah64_raddisp") displayCtrl 406) ctrlSetTextColor[0, 0, 0, 0];
 };
 
 
@@ -1430,7 +1430,7 @@ if (_350mark > 0.7) then {
 if (_350mark < 0.3) then {
     _350mark = _350mark - 100;
 };
-((uiNameSpace getVariable "fza_ah64_raddisp") displayCtrl 207) ctrlSetPosition[_alternatesensor - 0.025, 0.31];
+((uiNameSpace getVariable "fza_ah64_raddisp") displayCtrl 407) ctrlSetPosition[_alternatesensor - 0.025, 0.31];
 ((uiNameSpace getVariable "fza_ah64_raddisp") displayCtrl 134) ctrlSetPosition[_chevmark - 0.025, 0.31];
 ((uiNameSpace getVariable "fza_ah64_raddisp") displayCtrl 146) ctrlSetPosition[_360mark - 0.02, 0.27];
 ((uiNameSpace getVariable "fza_ah64_raddisp") displayCtrl 147) ctrlSetPosition[_30mark - 0.02, 0.27];
@@ -1468,7 +1468,7 @@ if (_350mark < 0.3) then {
 ((uiNameSpace getVariable "fza_ah64_raddisp") displayCtrl 179) ctrlSetPosition[_320mark, 0.29];
 ((uiNameSpace getVariable "fza_ah64_raddisp") displayCtrl 180) ctrlSetPosition[_340mark, 0.29];
 ((uiNameSpace getVariable "fza_ah64_raddisp") displayCtrl 181) ctrlSetPosition[_350mark, 0.29];
-((uiNameSpace getVariable "fza_ah64_raddisp") displayCtrl 207) ctrlCommit 0;
+((uiNameSpace getVariable "fza_ah64_raddisp") displayCtrl 407) ctrlCommit 0;
 ((uiNameSpace getVariable "fza_ah64_raddisp") displayCtrl 134) ctrlCommit 0;
 ((uiNameSpace getVariable "fza_ah64_raddisp") displayCtrl 146) ctrlCommit 0;
 ((uiNameSpace getVariable "fza_ah64_raddisp") displayCtrl 147) ctrlCommit 0;
