@@ -34,10 +34,10 @@ fza_ah64_dispfcrlist = ([_heli, fza_ah64_fcrlist] call fza_fnc_targetingFilterTy
 
     switch (_heli getVariable "fza_ah64_agmode") do {
         case 0: {
-            !((getpos _x select 2 > 10) || ((_heli distance2D _x) > 8000) || (_thetafcr > 70 && _thetafcr < 290) || !(alive _x))
+            !((getpos _x select 2 > 10) || ((_heli distance2D _x) > 16000) || (_thetafcr > 70 && _thetafcr < 290) || !(alive _x))
         };
         case 1: {
-            !((getpos _x select 2 < 10) || ((_heli distance2D _x) > 8000) || !(alive _i))
+            !((getpos _x select 2 < 10) || ((_heli distance2D _x) > 16000) || !(alive _i))
         };
         default {
             true

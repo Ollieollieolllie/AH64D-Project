@@ -114,7 +114,7 @@ class CfgVehicles
 		landingSoundOut1[] = {"A3\Sounds_F\vehicles\air\noises\landing_skids_ext1", 1.778279, 1.000000, 10};
 		landingSoundOut[] = {"landingSoundOut0", 0.500000, "landingSoundOut1", 0.500000};
 		soundenviron[] = {"", 1, 1};
-		author="Franze, Nodunit, Sacha 'Voodooflies' Oropeza, Zeitsev & Community";
+		author="Dryden, Franze, Nodunit, Sacha 'Voodooflies' Oropeza, Zeitsev & Community";
 		class RotorLibHelicopterProperties
 		{
 			autoHoverCorrection[] = {1.39,2.96,0};  // p - more forward, r - more right
@@ -942,13 +942,15 @@ class CfgVehicles
 	{
 		side=1;
 		scope=2;
-		author="Franze, Nodunit, Sacha 'Voodooflies' Oropeza, Keplager, mattysmith22 & Community";
+		author="Dryden, Franze, Nodunit, Sacha 'Voodooflies' Oropeza, Keplager, mattysmith22 & Community";
 		displayName="WAH-MK1 Apache-Longbow";
 		model="\fza_ah64_US\fza_ah64d_b2.p3d";
 		ejectDeadCargo=false;
 		ejectdeadgunner = false;
 		nameSound="veh_Helicopter";
-		faction="fza_usaav";
+		faction = "4thib_FACTION";
+		editorCategory="4IB_Eden_Category";
+		editorSubcategory="4IB_Eden_Subcategory_Vehicle_Air";
 		vehicleclass="fza_helicopters";
 		hasGunner=1;
 		audible=4;
@@ -1012,7 +1014,7 @@ class CfgVehicles
 				primaryGunner = 1;
 				stabilizedInAxes = 3;
 				weapons[] = {"fza_ma_safe", "Laserdesignator_mounted", "fza_burstlimiter","fza_m230","fza_m261_14_zoneA","fza_m261_14_zoneB","fza_m261_14_zoneE","fza_agm114_23_8"};
-				magazines[] = {"fza_safe", "LaserBatteries", "fza_m230_1200","fza_m261_m151_14_zoneA","fza_m261_m255_14_zoneB","fza_m261_m261_14_zoneE","fza_agm114k_23_8"};
+				magazines[] = {"fza_safe", "LaserBatteries", "fza_m230_1200","fza_m261_m151_14_zoneA","fza_m261_m255_14_zoneB","fza_m261_m261_14_zoneE","fza_agm114l_23_8"};
 				memoryPointsGetInGunner = "pos gunner";
 			    memoryPointsGetInGunnerDir = "pos gunner dir";
 			    memoryPointGun = "testsc";
@@ -1142,7 +1144,7 @@ class CfgVehicles
 							class SensorsDisplay   //Combined display showing sensors, detected and tracked targets, info about marked target and threats
 								{
 									componentType = "SensorsDisplayComponent";
-									range[] = {16000,8000,4000,2000};     //accepts an integer or an array of available ranges (submode)
+									range[] = {32000,16000,8000,4000,2000};     //accepts an integer or an array of available ranges (submode)
 									showTargetTypes = 1+2+4+8+16+32+64+128+256+512+1024; // 1 - Sensor sectors, 2 - Threats, 4 - Marked tgt symbol, 8 - Own detection, 16 - Remote detection, 32 - Active detection, 64 - Passive detection, 128 - Ground tgts, 256 - Air tgts, 512 - Men, 1024 - Special (laser, NV)
 									resource = "RscCustomInfoSensors";
 								};
@@ -2833,7 +2835,7 @@ initPhase=0;
 	{
 		side=1;
 		scope=2;
-		author="Franze, Nodunit, Sacha 'Voodooflies' Oropeza, Keplager, mattysmith22 & Community";
+		author="Dryden, Franze, Nodunit, Sacha 'Voodooflies' Oropeza, Keplager, mattysmith22 & Community";
 		displayName="AH-64A";
 	};
 

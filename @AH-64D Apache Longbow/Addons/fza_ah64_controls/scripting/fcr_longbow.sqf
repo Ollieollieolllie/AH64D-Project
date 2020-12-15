@@ -54,7 +54,7 @@ do {
                     _rem = true;    
                 };
 
-                if (_i distance _heli > 10000 || (_i iskindof "man") || !(alive _i)) then {
+                if (_i distance _heli > 16000 || (_i iskindof "man") || !(alive _i)) then {
                     _targetArray = _targetArray - [_i];
                     _rem = true;
                 };

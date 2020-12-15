@@ -237,10 +237,10 @@ if (cameraView == "GUNNER" && player == gunner _heli && (_heli animationphase "p
             fza_ah64_bweff ppEffectEnable false;
         };
     } else {
-        fza_ah64_bweff = ppEffectCreate["colorCorrections", 1499];
-        fza_ah64_bweff ppEffectAdjust[1, 1, 0, [0, 0, 0, 0], [1, 1, 1, 0], [0.33, 0.33, 0.33, 0], [0, 0, 0, 0, 0, 0, 4]]; //MONOCHROME TADS EXP
-        fza_ah64_bweff ppEffectCommit 0;
-        fza_ah64_bweff ppEffectEnable true;
+        //fza_ah64_bweff = ppEffectCreate["colorCorrections", 1499];
+        //fza_ah64_bweff ppEffectAdjust[1, 1, 0, [0, 0, 0, 0], [1, 1, 1, 0], [0.33, 0.33, 0.33, 0], [0, 0, 0, 0, 0, 0, 4]]; //MONOCHROME TADS EXP
+        //fza_ah64_bweff ppEffectCommit 0;
+        //fza_ah64_bweff ppEffectEnable true;
     };
 
     _headsdown = true;

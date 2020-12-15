@@ -65,15 +65,15 @@ class CfgMagazines
 	class fza_atas_2: VehicleMagazine
 	{
 		scope = 2;
-		displayName = "FIM-92";
+		displayName = "Starstreak 2 HVM";
 		count = 4;
-		ammo = "fza_fim92";
-		initSpeed = 150;
+		ammo = "Starstreak2_AA";
+		initSpeed = 300;
 		sound[] = {"A3\sounds_f\dummysound", 3.16228, 1};
 		reloadSound[] = {"A3\sounds_f\dummysound", 0.000316228, 1};
 		weight = 60;		
 	};
-	
+
 	////////////////////////////////////////////////////////////////////////
 	///////////////////////////////HELLFIRE/////////////////////////////////
 	////////////////////////////////////////////////////////////////////////	

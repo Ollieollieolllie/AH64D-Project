@@ -1,5 +1,5 @@
 #include "\a3\ui_f\hpp\definedikcodes.inc"
-#define MOD_NAME "AH-64D Apache"
+#define MOD_NAME "WAH-MK1"
 
 #define ENSURE_IN_APACHE(expr) if(vehicle player isKindOf "fza_ah64base") then { expr };
 
