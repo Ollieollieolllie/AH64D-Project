@@ -3,15 +3,15 @@ params ["_heli"];
 
 private _2dvectTo3D = {[_this # 0, _this # 1, 0]};
 
-[_heli,  (getposasl _heli select 2) * 3.28084 / 10, "\fza_ah64_us\tex\CHAR\G", SEL_DIGITS_MPD_PL_FLT_BALT] call fza_fnc_drawNumberSelections;
-[_heli,  (getpos _heli select 2) * 3.28084, "\fza_ah64_us\tex\CHAR\G", SEL_DIGITS_MPD_PL_FLT_RALT] call fza_fnc_drawNumberSelections;
+[_heli,  (getposasl _heli select 2) * 1 / 10, "\fza_ah64_us\tex\CHAR\G", SEL_DIGITS_MPD_PL_FLT_BALT] call fza_fnc_drawNumberSelections;
+[_heli,  (getpos _heli select 2) * 1, "\fza_ah64_us\tex\CHAR\G", SEL_DIGITS_MPD_PL_FLT_RALT] call fza_fnc_drawNumberSelections;
 
 
-private _airSpeedKnots = vectorMagnitude (velocity _heli vectorDiff wind) * 1.94;
+private _airSpeedKnots = vectorMagnitude (velocity _heli vectorDiff wind) * 1;
 [_heli, _airSpeedKnots, "\fza_ah64_us\tex\CHAR\G", SEL_DIGITS_MPD_PL_FLT_SPD] call fza_fnc_drawNumberSelections;
 
 private _groundSpeed = vectorMagnitude (velocity _heli call _2dvectTo3D);
-private _groundSpeedKnots = _groundSpeed * 1.94;
+private _groundSpeedKnots = _groundSpeed * 1;
 [_heli, _groundSpeedKnots, "\fza_ah64_us\tex\CHAR\G", SEL_DIGITS_MPD_PL_FLT_GSPD] call fza_fnc_drawNumberSelections;
 
 private _torque = 0;

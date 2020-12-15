@@ -474,9 +474,9 @@ if (difficultyEnabledRTD && count(enginesTorqueRTD _heli) == 2) then {
 if (_collective == "scalar") then {
     _collective = "0";
 };
-_speedkts = format["%1", round(1.94 * (sqrt(((velocity _heli select 0) + (0.836 * (abs(wind select 0) ^ 1.5))) ^ 2 + ((velocity _heli select 1) + (0.836 * (abs(wind select 2) ^ 1.5))) ^ 2 + ((velocity _heli select 2) + (0.836 * (abs(wind select 1) ^ 1.5))) ^ 2)))];
-_radaltft = format["%1", round(3.28084 * (getpos _heli select 2))];
-_baraltft = format["%1", round(3.28084 * (getposasl _heli select 2))];
+_speedkts = format["%1", round(1 * (sqrt(((velocity _heli select 0) + (0 * (abs(wind select 0) ^ 1.5))) ^ 2 + ((velocity _heli select 1) + (0 * (abs(wind select 2) ^ 1.5))) ^ 2 + ((velocity _heli select 2) + (0 * (abs(wind select 1) ^ 1.5))) ^ 2)))];
+_radaltft = format["%1", round(1 * (getpos _heli select 2))];
+_baraltft = format["%1", round(1 * (getposasl _heli select 2))];
 _fcrantennafor = ((_heli animationphase "longbow") * 0.48) + 0.5;
 if (_fcrantennafor > 0.56) then {
     _fcrantennafor = 0.56;
