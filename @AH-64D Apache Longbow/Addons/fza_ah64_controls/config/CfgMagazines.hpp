@@ -67,7 +67,7 @@ class CfgMagazines
 		scope = 2;
 		displayName = "Starstreak 2 HVM";
 		count = 4;
-		ammo = "Starstreak2_AA";
+		ammo = "Starstreak3_Apache";
 		initSpeed = 300;
 		sound[] = {"A3\sounds_f\dummysound", 3.16228, 1};
 		reloadSound[] = {"A3\sounds_f\dummysound", 0.000316228, 1};

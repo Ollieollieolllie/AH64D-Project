@@ -2,10 +2,10 @@
 	"fza_ah64_rearmTime",
 	"List",
 	"Rearm time",
-	["AH64D Apache", "Rearm"],
+	["WAH-MK1 Apache", "Rearm"],
 	[
-		[0, 15, 30, 60, 120, 240],
-		["Instant", "15 seconds", "30 seconds", "1 minute", "2 minutes", "4 minutes"],
+		[0, 15, 30, 60],
+		["Instant", "15 seconds", "30 seconds", "1 minute"],
 		5
 	],
 	1
@@ -15,7 +15,7 @@
 	"fza_ah64_headTrackAllowCursorMove",
 	"CHECKBOX",
 	"Allow cursor movement while in head tracking mode",
-	["AH64D Apache", "Control"],
+	["WAH-MK1 Apache", "Control"],
 	[true],
 	0
 ] call CBA_fnc_addSetting;
@@ -24,7 +24,7 @@
 	"fza_ah64_headTrackSensitivity",
 	"SLIDER",
 	"Head tracking mode cursor sensitivity",
-	["AH64D Apache", "Control"],
+	["WAH-MK1 Apache", "Control"],
 	[0, 1, 0.5, 2],
 	0
 ] call CBA_fnc_addSetting;
@@ -33,7 +33,7 @@
 	"fza_ah64_enableClickHelper",
 	"CHECKBOX",
 	"Enable Cockpit hints",
-	["AH64D Apache", "UI"],
+	["WAH-MK1 Apache", "UI"],
 	[true]
 ] call CBA_fnc_addSetting;
 
@@ -41,7 +41,7 @@
 	"fza_ah64_vanillaTargetingEnable",
 	"CHECKBOX",
 	"Show vanilla targeting information (restart needed)",
-	["AH64D Apache", "UI"],
+	["WAH-MK1 Apache", "UI"],
 	[true],
 	0,
 	{

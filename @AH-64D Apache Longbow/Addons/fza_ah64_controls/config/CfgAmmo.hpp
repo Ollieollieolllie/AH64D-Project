@@ -1,5 +1,6 @@
 class CfgAmmo
 {
+	class Starstreak2_AA;
 	class B_30mm_HE;
 	class Bulletbase;
 	class MissileCore;
@@ -59,6 +60,14 @@ class CfgAmmo
 		airlock = 0;
 		irlock = 0;
 		allowAgainstInfantry = 1;
+	};
+
+	class Starstreak3_Apache: Starstreak2_AA
+	{
+		hit = 327;
+		cmImmunity = 1;
+		indirectHit = 30;
+		indirectHitRange = 5
 	};
 	
 	///////////////////////////////////////////////////////////////////////

@@ -17,7 +17,7 @@ class CfgWeapons
 		magazines[] = {"192Rnd_CMFlareMagazine"};
 		magazineReloadTime = 0.200000;
 		simulation = "cmlauncher";
-		modes[] = {"Single"};
+		modes[] = {"Single","burst"};
 		class Single
 		{
 			displayName = "$STR_A3_CMFlareLauncher_weapon_mode_Single_name";
@@ -812,19 +812,19 @@ class CfgWeapons
 		};		
 		airateoffire = 5;
 		airateoffiredistance = 2500;
-		cmimmunity = 0.8;
+		cmimmunity = 1;
 		canlock = 0;
 		cursor = "";
 		cursoraim = "";
-		displayname = "FIM-92F Stinger";
+		displayname = "ATASK II";
 		magazinereloadtime = 30;
 		magazines[] = {"fza_atas_2"};
-		maxrange = 4000;
-		maxrangeprobab = 0.1;
-		midrange = 1000;
-		midrangeprobab = 0.8;
+		maxrange = 9000;
+		maxrangeprobab = 1;
+		midrange = 4500;
+		midrangeprobab = 1;
 		minrange = 50;
-		minrangeprobab = 0.3;
+		minrangeprobab = 1;
 		reloadtime = 0.5;
 		sounds[] = {"StandardSound"};
 		weaponlockdelay = 0;
