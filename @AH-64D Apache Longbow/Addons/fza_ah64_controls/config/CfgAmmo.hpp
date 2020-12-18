@@ -51,12 +51,12 @@ class CfgAmmo
 		soundsetbulletfly[] = {"fza_sc_bullet_flyby_soundset"};
 		soundsetsoniccrack[] = {"fza_sc_30x113_soundset"};
 		soundsetexplosion[] = {"fza_20mm_explosion_soundset", "fza_explosion_echo_small_soundset"};
-		hit = 60;
+		hit = 100;
 		indirectHit = 10;
-		indirectHitRange = 3.5;		
+		indirectHitRange = 5;		
 		maxspeed = 805;
 		explosive = 0.50;
-		airFriction = -0.00036;
+		airFriction = -0.00030;
 		airlock = 0;
 		irlock = 0;
 		allowAgainstInfantry = 1;
