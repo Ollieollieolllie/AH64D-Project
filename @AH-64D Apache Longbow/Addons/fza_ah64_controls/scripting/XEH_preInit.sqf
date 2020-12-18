@@ -6,7 +6,7 @@
 	[
 		[0, 15, 30, 60],
 		["Instant", "15 seconds", "30 seconds", "1 minute"],
-		5
+		3
 	],
 	1
 ] call CBA_fnc_addSetting;
