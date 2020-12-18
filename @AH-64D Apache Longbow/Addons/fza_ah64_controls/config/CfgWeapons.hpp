@@ -111,7 +111,7 @@ class CfgWeapons
 		cursorAim = "";
 		reloadTime=0.102;
 		weaponLockSystem = "8+4";
-		ballisticscomputer = 1;
+		ballisticscomputer = 16;
 		weaponLockDelay = 0;
 		autoreload = 1;
 		multiplier = 1;

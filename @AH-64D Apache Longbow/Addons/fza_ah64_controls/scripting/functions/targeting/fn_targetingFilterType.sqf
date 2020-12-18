@@ -27,7 +27,7 @@ _targFilter = _heli getVariable "fza_ah64_tsdsort";
 switch (_targFilter) do {
     case 0: {_targs}; //All
     case 1: {_targs select {_x isKindOf "tank"}}; //Tracked
-    case 2: {_targs select {[_x] call fza_fnc_targetIsADA}}; //Air defence artillery
+    case 2: {_targs select {_adaunit}}; //Air defence artillery
     case 3: {_targs select {_x isKindOf "car"}}; //Wheeled
     case 4;
     case 5;
