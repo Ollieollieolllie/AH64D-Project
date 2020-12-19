@@ -23,7 +23,7 @@ _flareCount = 0;
 	};
 } forEach magazinesAllTurrets _heli;
 
-[_heli, _flareCount, "\fza_ah64_us\tex\char\g", SEL_DIGITS_MPD_PR_ASE_CC] call fza_fnc_drawNumberSelections;
+[_heli, _flareCount/2, "\fza_ah64_us\tex\char\g", SEL_DIGITS_MPD_PR_ASE_CC] call fza_fnc_drawNumberSelections;
 
 _heli setobjecttexture [SEL_MPD_PR_ASE_CSEL, ""];
 

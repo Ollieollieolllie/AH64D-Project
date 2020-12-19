@@ -12,10 +12,9 @@ do {
     waitUntil {
         ((driver(vehicle player) == player || gunner(vehicle player) == player))
     };
-    fza_ah64_asethreats = fza_ah64_targetlist; {
+    fza_ah64_asethreats = vehicles - allDead; {
         _i = _x;
-        fza_ah64_asethreats = fza_ah64_asethreats - [_i];
-        fza_ah64_asethreats = fza_ah64_asethreats - allDead; {
+        fza_ah64_asethreats = fza_ah64_asethreats - [_i];  {
             if (_i iskindof _x) then {
                 fza_ah64_asethreats = fza_ah64_asethreats + [_i];
                 if ((_heli == assignedTarget _i || _i AimedAtTarget[_heli] > 0.5) && (alive _i) && !(_i in fza_ah64_threattracking)) then {

@@ -497,14 +497,14 @@ class CfgVehicles
 			*/
 			class HitTransmission
 			{
-				armor = 0.8;
+				armor = 3.5;
 				material = -1;
 				name = "trans";
 				passthrough = 0.25;
 			};
 			class HitEngine
 			{
-				armor = 0.8;
+				armor = 3;
 				material = 51;
 				name = "trans";
 				passthrough = 0.25;
@@ -517,7 +517,7 @@ class CfgVehicles
 			};
 			class HitEngine1
 			{
-				armor = 0.7;
+				armor = 2;
 				material = 51;
 				name = "leng";
 				passthrough = 1;
@@ -529,7 +529,7 @@ class CfgVehicles
 			};
 			class HitEngine2
 			{
-				armor = 0.7;
+				armor = 2;
 				material = 51;
 				name = "reng";
 				passthrough = 1;
@@ -541,7 +541,7 @@ class CfgVehicles
 			};
 			class Hitlfab
 			{
-				armor = 0.5;
+				armor = 1;
 				material = 51;
 				name = "lfab";
 				passthrough = 0.1;
@@ -549,7 +549,7 @@ class CfgVehicles
 			};
 			class Hitrfab
 			{
-				armor = 0.5;
+				armor = 1;
 				material = 51;
 				name = "rfab";
 				passthrough = 0.1;
@@ -645,7 +645,7 @@ class CfgVehicles
 			};
 			class Hitradar
 			{
-				armor = 0.05;
+				armor = 0.2;
 				material = 51;
 				name = "radar";
 				passthrough = 0.1;

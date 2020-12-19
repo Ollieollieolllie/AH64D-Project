@@ -74,20 +74,6 @@ do {
                     _targetArray = _targetArray - [_i];
                     _rem = true;
                 };
-
-                if (!(_rem)) then {
-                    _randchance = random 100;
-                    _detectchance = 0.00050;
-
-                    if (_adaunit) then {
-                        _detectchance = 0.00017;
-                    };
-
-                    if (((_i distance _heli) * _detectchance) > _randchance) then {
-                        _targetArray = _targetArray - [_i];
-                    };
-                    //if((terrainIntersectasl [getposasl _heli, [(getPosASL _i select 0),(getPosASL _i select 1),(getPosASL _i select 2)+1]]) || (lineIntersects [getposasl _heli, getPosASL _i, _heli, _i])) then {_targetArray = _targetArray - [_i];};
-                };
                 sleep 0.03;
             };
         }
@@ -106,5 +92,5 @@ do {
         }
         foreach _targetArray;
     };
-    sleep 2;
+    sleep 15;
 };
