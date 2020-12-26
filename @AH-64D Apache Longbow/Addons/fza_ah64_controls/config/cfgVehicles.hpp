@@ -760,7 +760,7 @@ class CfgVehicles
 				condition="(player == driver this || player == gunner this) && ([this, 0] call fza_fnc_mpdGetCurrentDisplay == ""wpn"") && (currentweapon this == ""fza_m230"" || currentweapon this == ""fza_burstlimiter"")";
 				shortcut="Binocular";
 				statement="[this] call fza_fnc_weaponM230CycleBurst";
-			};
+			};/*
 			class rocketsalvo
 			{
 				displayName="";
@@ -774,7 +774,7 @@ class CfgVehicles
 				condition="(player == driver this || player == gunner this) && ([this, 0] call fza_fnc_mpdGetCurrentDisplay == ""wpn"") && (currentweapon this in fza_ah64_rocketweps14 || currentweapon this in fza_ah64_rocketweps23 || currentweapon this in fza_ah64_rocketweps1 || currentweapon this in fza_ah64_rocketweps2 || currentweapon this in fza_ah64_rocketweps3 || currentweapon this in fza_ah64_rocketweps4)";
 				shortcut="Binocular";
 				statement="fza_ah64_rs = [this] execvm ""\fza_ah64_controls\scripting\rocket_salvo.sqf""";
-			};
+			};*/
 			class pilotdoor_open
 			{
 				displayName="Open Pilot Door";

@@ -92,5 +92,5 @@ do {
         }
         foreach _targetArray;
     };
-    sleep 15;
+    sleep 2;
 };

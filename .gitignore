@@ -56,3 +56,6 @@ Temporary Items
 *.bat
 docs/
 naturaldocs/Working Data
+@AH-64D Apache Longbow/Addons/fza_ah64_us.pbo.WAH-MK1CBA.bisign
+*.bisign
+@AH-64D Apache Longbow/Addons/fza_ah64_controls.pbo.WAH-MK1CBA.bisign
