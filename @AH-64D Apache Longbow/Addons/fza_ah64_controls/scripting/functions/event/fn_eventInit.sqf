@@ -141,12 +141,13 @@ while {
     alive _heli
 }
 do {
-    if ((!isNull (_heli getVariable["fza_ah64_floodlight", objNull])) && _heli animationphase "plt_batt" < 0.5) then {
+    if ((!isNull (_heli getVariable["fza_ah64_floodlight_plt", objNull])) && _heli animationphase "plt_batt" < 0.5) then {
 
         _heli setobjecttexture [SEL_IN_BACKLIGHT, ""];
         _heli setobjecttexture [SEL_IN_BACKLIGHT2, ""];
 
-        deleteVehicle(_heli getVariable["fza_ah64_floodlight", objnull]);
+        deleteVehicle(_heli getVariable["fza_ah64_floodlight_plt", objnull]);
+        deleteVehicle(_heli getVariable["fza_ah64_floodlight_cpg", objnull]);
     };
 
     _mags = magazines _heli;
