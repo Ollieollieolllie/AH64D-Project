@@ -26,7 +26,7 @@ params ["_heli", "_system", "_control"];
 
 switch (_control) do {
 	case "floodlight": {
-		if ((isNull (_heli getVariable["fza_ah64_floodlight_cpg", objNull]) || (!isNull (_heli getVariable["fza_ah64_floodlight_plt", objNull]))) && _heli animationphase "plt_batt" > 0.5) then {
+		if ((isNull (_heli getVariable["fza_ah64_floodlight", objNull])) && _heli animationphase "plt_batt" > 0.5) then {
 			_heli setobjecttexture [SEL_IN_BACKLIGHT, "\fza_ah64_us\tex\in\dlt.paa"];
 			_heli setobjecttexture [SEL_IN_BACKLIGHT2, "\fza_ah64_us\tex\in\pushbut.paa"];
 
@@ -44,14 +44,12 @@ switch (_control) do {
 			_floodcpg setLightAttenuation[0, 1, 1, 2, 0.50, 1];
 			_floodcpg attachTo[_heli, [0, 0, 0], "cpg_memflood"];
 
-			_heli setVariable["fza_ah64_floodlight_plt", _floodplt, true];
-			_heli setVariable["fza_ah64_floodlight_cpg", _floodcpg, true];
+			_heli setVariable["fza_ah64_floodlight", _floodplt, true];
 		} else {
 			_heli setobjecttexture [SEL_IN_BACKLIGHT, ""];
 			_heli setobjecttexture [SEL_IN_BACKLIGHT2, ""];
 
-			deleteVehicle(_heli getVariable["fza_ah64_floodlight_plt", objnull]);
-			deleteVehicle(_heli getVariable["fza_ah64_floodlight_cpg", objnull]);
+			deleteVehicle(_heli getVariable["fza_ah64_floodlight", objnull]);
 		};
 
 		["fza_ah64_button_rotary", 0.1] spawn fza_fnc_playAudio;
