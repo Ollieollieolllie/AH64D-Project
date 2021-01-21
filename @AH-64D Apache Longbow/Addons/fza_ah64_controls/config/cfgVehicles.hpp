@@ -32,7 +32,11 @@ class CfgVehicles
     	receiveRemoteTargets    = 1;
     	reportRemoteTargets     = 1;
     	reportOwnPosition       = 1;
-	
+		
+		LESH_canBeTowed = 1;
+		LESH_towFromFront = 0;
+		LESH_AxisOffsetTarget[] = {0,-9.2,-2};
+		LESH_WheelOffset[] = {0,2.5};
 		side=1;
 		scope=0;
 		displayName="WAH-Mk1 Apache-Longbow";
@@ -145,7 +149,7 @@ class CfgVehicles
 					{
 						pointPosition = "driverview";
 						pointDirection = "driverview_dir";
-						renderQuality = 0;
+						renderQuality = 2;
 						renderVisionMode = 0; //DTV HDU
 						fov = 0.2;
 					};
@@ -157,7 +161,7 @@ class CfgVehicles
 					{
 						pointPosition = "driverview";
 						pointDirection = "driverview_dir";
-						renderQuality = 0;
+						renderQuality = 2;
 						renderVisionMode = 1; //NVG HDU
 						fov = 0.2;
 					};
@@ -1110,7 +1114,24 @@ class CfgVehicles
 						maxfov = 0.005;
 						minfov = 0.005;
 						opticsdisplayname = "s";
-					};
+					};/*
+					class onezoomlevel
+					{
+						gunneropticsmodel = "\fza_ah64_us\fza_ah64_optics_empty";
+						directionStabilized = 1;
+						initanglex = 0;
+						initangley = 0;
+						initfov = 0.466;
+						maxanglex = 30;
+						maxangley = 120;
+						maxfov = 0.466;
+						minanglex = -60;
+						minangley = -120;
+						minfov = 0.005;
+						opticsdisplayname = "W";
+						thermalmode[] = {0,1};
+						visionmode[] = {"Normal","Ti"};
+					};*/
 				};
 				class OpticsOut
 				{
@@ -1220,7 +1241,7 @@ class CfgVehicles
 			minAngleY=-45;
 			maxAngleY=20;
 			thermalmode[] = {0};
-			visionmode[] = {"Normal","Ti"}; //PNVS
+			visionmode[] = {"Normal","Ti","NVG"}; //PNVS
 		};
 
 		class AnimationSources
