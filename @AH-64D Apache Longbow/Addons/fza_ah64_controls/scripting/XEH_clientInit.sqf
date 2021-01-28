@@ -102,6 +102,9 @@
 	ENSURE_IN_APACHE(fza_ah64_tiron = !fza_ah64_tiron;)
 }, {}, [USER_19, [false, false, false]]] call fza_fnc_addKeybind;
 
+[MOD_NAME, "Self/remote laser", "Switch from self/remote lase", {
+	CALL_ENSURE_IN_APACHE(fza_fnc_controlHandlelasechange)
+}, {}, [0x13, [false, true, false]]] call fza_fnc_addKeybind;
 
 [MOD_NAME, "lockCamToTgt", "Toggle Camera Lock to Point Target", {
 	[vehicle player] spawn fza_fnc_targetingLockCamToTarget;

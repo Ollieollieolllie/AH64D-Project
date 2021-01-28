@@ -15,6 +15,7 @@ class CfgFunctions
 			class controlHandleASEAutopage {R;};
 			class controlHandleCrosshairAction {R;};
 			class controlHandleIHADSSMode {R;};
+			class controlHandlelasechange {R;};
 			class controlHandleJammerToggle {R;};
 			class controlHandleLookCenter {R;};
 			class controlHandleNextWaypoint {R;};
