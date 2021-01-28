@@ -1008,7 +1008,7 @@ class CfgVehicles
 		};
 		class Turrets
 		{
-			class MainTurret: NewTurret
+			class MainApacheTurret: NewTurret
 			{
 				gunnerAction = "fza_ah64_copilot";
 				gunnerGetInAction = "GetInHigh";
@@ -1016,8 +1016,8 @@ class CfgVehicles
 				primary = 1;
 				primaryGunner = 1;
 				stabilizedInAxes = 3;
-				weapons[] = {"fza_ma_safe", "Laserdesignator_mounted", "fza_atas_2", "fza_burstlimiter","fza_m230","fza_m261_14_zoneA","fza_m261_14_zoneB","fza_m261_14_zoneE","fza_agm114_2_4","fza_agm114_3_4"};
-				magazines[] = {"fza_safe", "LaserBatteries", "fza_atas_2", "fza_m230_1200","fza_m261_m151_14_zoneA","fza_m261_m255_14_zoneB","fza_m261_m261_14_zoneE","fza_agm114l_2_4","fza_agm114k_3_4"};
+				weapons[] = {"fza_ma_safe", "Laserdesignator_mounted", "fza_burstlimiter","fza_m230"};
+				magazines[] = {"fza_safe", "LaserBatteries", "fza_atas_2", "fza_m230_300"};
 				memoryPointsGetInGunner = "pos gunner";
 			    memoryPointsGetInGunnerDir = "pos gunner dir";
 			    memoryPointGun = "testsc";
@@ -1272,13 +1272,13 @@ class CfgVehicles
 		class mainTurret
 		{
 			source = "user";
-			animPeriod = 0.1;
+			animPeriod = 0;
 			initPhase=0;
 		};
 		class maingun
 		{
 			source = "user";
-			animPeriod = 0.1;
+			animPeriod = 0;
 			initPhase=0;
 		};
 		class pylon1
@@ -2856,7 +2856,7 @@ initPhase=0;
 		side=1;
 		scope=2;
 		author="Dryden, Franze, Nodunit, Sacha 'Voodooflies' Oropeza, Keplager, mattysmith22 & Community";
-		displayName="AH-64A";
+		displayName="AH-64A (Trainer)";	
 	};
 
 	/////////////////////////////////////////////////

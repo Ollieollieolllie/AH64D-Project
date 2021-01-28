@@ -29,14 +29,7 @@ switch (_targFilter) do {
     case 1: {_targs select {_x isKindOf "tank"}}; //Tracked
     case 2: {_targs select {_adaunit}}; //Air defence artillery
     case 3: {_targs select {_x isKindOf "car"}}; //Wheeled
-    case 4;
-    case 5;
-    case 6;
-    case 7;
-    case 8;
-    case 9;
-    case 10;
-    case 11 : {
+    case 4 : {
         _targs arrayIntersect (_heli getVariable "fza_ah64_pfzs" select (_targFilter - 4));
     };
 };

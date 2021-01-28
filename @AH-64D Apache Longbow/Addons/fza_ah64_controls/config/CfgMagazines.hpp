@@ -17,7 +17,7 @@ class CfgMagazines
 		scope = 1;
 		displayName="SAFE";
 		ammo="fza_master";
-		count=1;
+		count=0;
 		initSpeed=0;
 		tracersEvery=0;
 		nameSound="";

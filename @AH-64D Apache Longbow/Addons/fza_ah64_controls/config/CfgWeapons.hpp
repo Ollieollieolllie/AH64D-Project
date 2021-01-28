@@ -168,7 +168,7 @@ class CfgWeapons
 		scope = 2;
 		displayName="AGM-114K";
 		magazines[]={"fza_agm114k_16"};
-		weaponLockDelay = 1;
+		weaponLockDelay = 0;
 		weaponLockSystem = 4;
 		lockedtargetsound[] = {"", 1, 1};
 		lockingtargetsound[] = {"", 1, 1};
