@@ -42,7 +42,10 @@ _hostile setVariable ["fza_ah64_shotCounter", (_fza_ah64_incominghandled + 1) % 
 if (_fza_ah64_incominghandled % 2 == 1) exitWith {};
 
 if(!(_hostile in fza_ah64_threatfiring)) then {fza_ah64_threatfiring = fza_ah64_threatfiring + [_hostile];};
-
+if (_heli getVariable "fza_ah64_aseautopage" == 2) then {
+        [_heli, 1, "ase"] call fza_fnc_mpdSetDisplay;
+    };
+	
 if(typeOf _heli == "fza_ah64d_b2e" || typeOf _heli == "fza_ah64d_b2exp" || typeOf _heli == "fza_ah64d_b3") then
 {
 	{
@@ -133,10 +136,6 @@ if (_theta > 315 && _theta < 346) then
 	_oclock = 11; 
 	_clockaud = "fza_ah64_bt_11oclock";
 };
-
-if (_heli getVariable "fza_ah64_aseautopage" == 2) then {
-        [_heli, 1, "ase"] call fza_fnc_mpdSetDisplay;
-    };
 
 if (_range < 8000) then {
 	_heli vehiclechat format ["Missile %1 OClock %2 %3 Meters",_oclock,_highlow,_range];
