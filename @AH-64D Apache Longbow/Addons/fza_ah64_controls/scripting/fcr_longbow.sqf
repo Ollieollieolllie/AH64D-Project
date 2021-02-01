@@ -74,7 +74,7 @@ do {
                     _targetArray = _targetArray - [_i];
                     _rem = true;
                 };
-                sleep 0.03;
+                sleep 0.01;
             };
         }
         foreach _targetArray;

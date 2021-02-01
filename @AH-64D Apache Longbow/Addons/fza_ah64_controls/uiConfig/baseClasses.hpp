@@ -177,13 +177,11 @@ class fza_ah64_mapControl
 	colorText[] = {0,0,0,0};
 	colorSea[] = {0.56,0.8,0.98,0};
 	colorForest[] = {0.6,0.8,0.2,0};
-	colorRocks[] = {0.5,0.5,0.5,0};
 	colorCountlines[] = {0.65,0.45,0.27,0};
 	colorMainCountlines[] = {0.65,0.45,0.27,0};
 	colorCountlinesWater[] = {0,0.53,1,0};
 	colorMainCountlinesWater[] = {0,0.53,1,0};
 	colorForestBorder[] = {0.4,0.8,0,0};
-	colorRocksBorder[] = {0.5,0.5,0.5,0};
 	colorPowerLines[] = {0,0,0,0};
 	colorNames[] = {0,0,0,0};
 	colorInactive[] = {1,1,1,0};

@@ -435,6 +435,6 @@ if (((_acq == 0 || _acq == 3) && (local gunner _heli || (isNull gunner _heli && 
         _curcontrol = 0;
         _curguncontrol = 0.17;
     };
-    _heli animate["mainTurret", _curcontrol];
-    _heli animate["mainGun", _curguncontrol];
+    _heli animate["mainTurret", _curcontrol,4];
+    _heli animate["mainGun", _curguncontrol,4];
 };
