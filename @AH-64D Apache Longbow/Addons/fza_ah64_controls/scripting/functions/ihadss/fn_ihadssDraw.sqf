@@ -403,7 +403,7 @@ if (_heli getVariable "fza_ah64_agmode" == 2) then {
     _sensor = "A ";
     _sensxm = "TADS";
 }; //TADS SENSOR
-if (_heli getVariable "fza_ah64_agmode" == 3) then {
+if (_heli getVariable "fza_ah64_agmode" >= 3) then {
     _sensor = "R ";
     _sensxm = "FCR ";
     _heli setVariable ["fza_ah64_agmode", 0, true];

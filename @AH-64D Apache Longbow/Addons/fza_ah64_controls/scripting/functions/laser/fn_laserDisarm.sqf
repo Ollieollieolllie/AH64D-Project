@@ -19,9 +19,7 @@ Author:
 	Unknown, mattysmith22
 ---------------------------------------------------------------------------- */
 params ["_heli"];
-//fza_ah64_laserstate = 0;
 
 if !(isNull laserTarget _heli) then {
     [_heli, "Laserdesignator_mounted", [0]] call BIS_fnc_fire;
 }
-[_heli] spawn fza_fnc_controlHandlelasechange;

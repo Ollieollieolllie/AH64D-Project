@@ -276,16 +276,16 @@ class CfgAmmo
 		proxyShape ="\fza_ah64_US\fza_agm114k";		
 		hit = 900;
 		indirectHit = 500;
-		indirectHitRange = 20;
+		indirectHitRange = 100;
 		cost = 1000;
 	};
 	class fza_agm114n : fza_agm114k
 	{		
 		model = "\fza_ah64_US\fza_agm114k";
 		proxyShape = "\fza_ah64_US\fza_agm114k";	
-		hit = 600;
-		indirecthit = 600;
-		indirecthitrange = 20;
+		hit = 1000;
+		indirecthit = 1000;
+		indirecthitrange = 50;
 		explosionEffects = "BombExplosion";
 		cost = 1000;
 	};
