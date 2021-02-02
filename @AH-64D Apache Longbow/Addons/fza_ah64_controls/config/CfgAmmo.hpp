@@ -1,5 +1,6 @@
 class CfgAmmo
 {
+	class Default{};
 	class Starstreak2_AA;
 	class B_30mm_HE;
 	class Bulletbase;
@@ -31,15 +32,15 @@ class CfgAmmo
 		initTime = 0;
 		aiAmmoUsageFlags = 8;	
 	};
-	class fza_master: Bulletbase
+	class fza_master: default
 	{
-		airLock=0;
+		airLock=1;
 		irLock=0;
 		laserLock=0;
 		nvLock=0;
 		artilleryLock=0;
-		weaponLockSystem=0;
-		lockType=2;
+		lockType=0;
+		weaponLockSystem="0";
 	};
 	
 	///////////////////////////////////////////////////////////////////////

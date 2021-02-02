@@ -988,7 +988,7 @@ class CfgVehicles
 		weapons[] = {"fza_CMFlareLauncher"};
 		magazines[] = {"192Rnd_CMFlareMagazine"};
 		lockdetectionsystem = "8+4";
-		incommingmissliedetectionsystem = 16;
+		incomingMissileDetectionSystem  = 16;
 		gunAimDown = 0;
 		selectionHRotorStill = "velka vrtule staticka";
 		selectionHRotorMove = "velka vrtule blur";
