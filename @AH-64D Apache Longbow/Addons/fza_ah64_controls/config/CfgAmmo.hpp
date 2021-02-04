@@ -88,7 +88,7 @@ class CfgAmmo
 		thrust						= 199;
 		fuseDistance				= 5;
 		manualControl 				= 0;
-		maxControlRange				= 8000;
+		maxControlRange				= 12000;
 		trackOversteer				= 1;
 		trackLead					= 0.2;
 		maneuvrability				= 21;
@@ -215,16 +215,18 @@ class CfgAmmo
 		airLock = 0;
 		irlock = 0;	
 		nvLock=0;
+		manualControl= 1;
 		
 		//MSL sensors definition
 		missileLockMaxDistance = 8000;
 		missileLockMinDistance = 500;
 		missileLockMaxSpeed = 56;
-		missileLockCone = 40;
-		missileKeepLockedCone = 40;
-		missileManualControlCone = 40;
+		missileLockCone = 50;
+		missileKeepLockedCone = 50;
+		missileManualControlCone = 50;
 		weaponLockSystem = "4 + 16"
 		weaponType = "missileAA";
+		flightProfiles[]	= {TopDown,LoalDistance};
 		class Components : Components
 		{
 			class SensorsManagerComponent
@@ -440,7 +442,7 @@ class CfgAmmo
 		triggerTime = 0.25;
 		triggerSpeedCoef = 1;
 		audibleFire = 20;
-		intensity = 10000;
+		intensity = 150000;
 	};
 	class fza_flec_cluster: B_9x21_Ball
 	{

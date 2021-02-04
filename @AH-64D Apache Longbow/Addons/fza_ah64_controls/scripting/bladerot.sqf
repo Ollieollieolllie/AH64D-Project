@@ -38,13 +38,13 @@ do {
     };
     if ("fza_ah64_rotor_dam" in (_heli magazinesturret[-1])) then {
         _rtex = "\fza_ah64_us\tex\dam\mdam_Rtrs_co.paa";
-    };
+    };/* //MATCHSTICK ROTORS 
     if ("fza_ah64_rotor_fail" in (_heli magazinesturret[-1])) then {
         _rtex = "";
         _heli setobjecttexture [SEL_HDAM_RTR, "\fza_ah64_us\tex\dam\hdam_Rtrs_co.paa"];
     } else {
         _heli setobjecttexture [SEL_HDAM_RTR, ""];
-    };
+    };*/
     if (_heli animationphase "blade1_rise1" > 0.5 && !("fza_ah64_tailrotor_fail" in (_heli magazinesturret[-1])) && !("fza_ah64_tailrotor_dam" in (_heli magazinesturret[-1]))) then {
         _heli setobjecttexture [SEL_TR_BLADES, ""];
         _heli setobjecttexture [SEL_TR_BLUR, _trtex];

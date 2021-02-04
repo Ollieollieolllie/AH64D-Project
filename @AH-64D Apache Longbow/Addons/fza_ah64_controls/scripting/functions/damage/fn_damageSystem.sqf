@@ -87,6 +87,7 @@ if (_system == "tads_tur" || _system == "tads") then {
 if (_system == "pnvs") then {
     if (_damage >= 0.8 && !("fza_ah64_pnvs_fail" in _mags)) then {
         _heli addmagazineturret["fza_ah64_pnvs_fail", [-1]];
+        _heli sethit["pnvs", 1];
         if (_usesound) then {
             ["fza_ah64_pnvs_fail_1", 3] spawn fza_fnc_playAudio;
         };
@@ -97,7 +98,7 @@ if (_system == "otochlaven") then {
     if (_damage >= 0.8 && !("fza_ah64_gun_jam" in _mags)) then {
         _heli addmagazineturret["fza_ah64_gun_jam", [-1]];
         _heli removemagazine "fza_m230_1200";
-        _heli removemagazine "fza_m230_350";
+        _heli removemagazine "fza_m230_300";
         if (_usesound) then {
             ["fza_ah64_bt_gun", 0.5, "fza_ah64_bt_jammed", 1] spawn fza_fnc_playAudio;
         };

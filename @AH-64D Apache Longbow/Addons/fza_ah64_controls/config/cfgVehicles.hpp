@@ -489,16 +489,14 @@ class CfgVehicles
 				minimalHit = 0.05;
 				radius = 0.4;
 			};
-			/*
 			class HitFuselage
 			{
-				armor = 1;
+				armor = 100;
 				material = 51;
 				name = "fuselage";
 				passthrough = 1;
 				visual = "fuselage";
 			};
-			*/
 			class HitTransmission
 			{
 				armor = 3.5;
@@ -545,7 +543,7 @@ class CfgVehicles
 			};
 			class Hitlfab
 			{
-				armor = 1;
+				armor = 2;
 				material = 51;
 				name = "lfab";
 				passthrough = 0.1;
@@ -553,7 +551,7 @@ class CfgVehicles
 			};
 			class Hitrfab
 			{
-				armor = 1;
+				armor = 2;
 				material = 51;
 				name = "rfab";
 				passthrough = 0.1;
@@ -585,7 +583,7 @@ class CfgVehicles
 			};
 			class Hitlwing
 			{
-				armor = 0.75;
+				armor = 1;
 				material = 51;
 				name = "lwing";
 				passthrough = 0.1;
@@ -593,7 +591,7 @@ class CfgVehicles
 			};
 			class Hitrwing
 			{
-				armor = 0.75;
+				armor = 1;
 				material = 51;
 				name = "rwing";
 				passthrough = 0.1;
@@ -601,7 +599,7 @@ class CfgVehicles
 			};
 			class HitTail
 			{
-				armor = 0.75;
+				armor = 2;
 				material = 51;
 				name = "tailboom";
 				passthrough = 0.5;
@@ -609,7 +607,7 @@ class CfgVehicles
 			};
 			class HitVTail
 			{
-				armor = 0.2;
+				armor = 2;
 				material = 51;
 				name = "vtail";
 				passthrough = 0.1;
@@ -617,7 +615,7 @@ class CfgVehicles
 			};
 			class HitHTail
 			{
-				armor = 0.2;
+				armor = 2;
 				material = 51;
 				name = "hstab";
 				passthrough = 0.1;
@@ -625,7 +623,7 @@ class CfgVehicles
 			};
 			class HitPNVS
 			{
-				armor = 0.25;
+				armor = 1.2;
 				material = 51;
 				name = "pnvs";
 				passthrough = 0.1;
@@ -633,7 +631,7 @@ class CfgVehicles
 			};
 			class Hittads
 			{
-				armor = 0.25;
+				armor = 2;
 				material = 51;
 				name = "tads";
 				passthrough = 0.1;
@@ -641,7 +639,7 @@ class CfgVehicles
 			};
 			class Hittadstur
 			{
-				armor = 0.25;
+				armor = 2;
 				material = 51;
 				name = "tads_tur";
 				passthrough = 0.1;
@@ -649,7 +647,7 @@ class CfgVehicles
 			};
 			class Hitradar
 			{
-				armor = 0.2;
+				armor = 1.5;
 				material = 51;
 				name = "radar";
 				passthrough = 0.1;
@@ -657,7 +655,7 @@ class CfgVehicles
 			};
 			class Hitotocvez
 			{
-				armor = 0.25;
+				armor = 1;
 				material = 51;
 				name = "otocvez";
 				passthrough = 0.1;
@@ -665,7 +663,7 @@ class CfgVehicles
 			};
 			class Hitotochlaven
 			{
-				armor = 0.25;
+				armor = 2;
 				material = 51;
 				name = "otochlaven";
 				passthrough = 0.1;
@@ -689,7 +687,7 @@ class CfgVehicles
 			};
 			class Hitpylon1
 			{
-				armor = 0.2;
+				armor = 0.6;
 				material = 51;
 				name = "pylon1";
 				passthrough = 0.1;
@@ -697,7 +695,7 @@ class CfgVehicles
 			};
 			class Hitpylon2
 			{
-				armor = 0.2;
+				armor = 0.6;
 				material = 51;
 				name = "pylon2";
 				passthrough = 0.1;
@@ -705,7 +703,7 @@ class CfgVehicles
 			};
 			class Hitpylon3
 			{
-				armor = 0.2;
+				armor = 0.6;
 				material = 51;
 				name = "pylon3";
 				passthrough = 0.1;
@@ -713,7 +711,7 @@ class CfgVehicles
 			};
 			class Hitpylon4
 			{
-				armor = 0.2;
+				armor = 0.6;
 				material = 51;
 				name = "pylon4";
 				passthrough = 0.1;
@@ -982,7 +980,7 @@ class CfgVehicles
 		nightVision=1;
 		mainRotorSpeed = 1;
 		threat[] = {1,1,0.700000};
-		armor=200;
+		armor=180;
 		memorypointcm[] = {"flare_beg","flare1_beg"};
 		memorypointcmdir[] = {"flare_end","flare1_end"};
 		weapons[] = {"fza_CMFlareLauncher"};
@@ -1054,7 +1052,7 @@ class CfgVehicles
 				{
 					class HitTurret
 					{
-						armor = 0.5;
+						armor = 2;
 						material = 51;
 						name = "tads_tur";
 						visual = "tads_tur";
@@ -1062,7 +1060,7 @@ class CfgVehicles
 					};
 					class HitGun
 					{
-						armor = 1;
+						armor = 2;
 						material = 52;
 						name = "tads";
 						visual = "tads";
