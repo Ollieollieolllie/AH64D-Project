@@ -38,7 +38,11 @@ do {
     };
     if ("fza_ah64_rotor_dam" in (_heli magazinesturret[-1])) then {
         _rtex = "\fza_ah64_us\tex\dam\mdam_Rtrs_co.paa";
-    };/* //MATCHSTICK ROTORS 
+    };
+    if ("fza_ah64_rotor_fail" in (_heli magazinesturret[-1])) then {
+        _rtex = "\fza_ah64_us\tex\dam\mdam_Rtrs_co.paa";
+    };
+    /* //MATCHSTICK ROTORS 
     if ("fza_ah64_rotor_fail" in (_heli magazinesturret[-1])) then {
         _rtex = "";
         _heli setobjecttexture [SEL_HDAM_RTR, "\fza_ah64_us\tex\dam\hdam_Rtrs_co.paa"];

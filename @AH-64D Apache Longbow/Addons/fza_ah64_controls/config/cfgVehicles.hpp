@@ -506,7 +506,7 @@ class CfgVehicles
 			};
 			class HitEngine
 			{
-				armor = 3;
+				armor = 4;
 				material = 51;
 				name = "trans";
 				passthrough = 0.25;
@@ -519,7 +519,7 @@ class CfgVehicles
 			};
 			class HitEngine1
 			{
-				armor = 2;
+				armor = 2.3;
 				material = 51;
 				name = "leng";
 				passthrough = 1;
@@ -531,7 +531,7 @@ class CfgVehicles
 			};
 			class HitEngine2
 			{
-				armor = 2;
+				armor = 2.3;
 				material = 51;
 				name = "reng";
 				passthrough = 1;

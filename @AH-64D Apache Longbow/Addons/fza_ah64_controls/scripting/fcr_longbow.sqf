@@ -29,7 +29,7 @@ do {
         //add targets to master list
         //_targetArray = (list _radsweep);
         //_targetArray = vehicles - allDead;
-
+            
         _targetArray = vehicles - allDead;
         _datalinkArray = listRemoteTargets west;
         {

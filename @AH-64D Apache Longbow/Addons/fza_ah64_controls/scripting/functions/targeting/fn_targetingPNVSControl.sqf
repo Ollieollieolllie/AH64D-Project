@@ -45,8 +45,12 @@ if (player == driver _heli && (vehicle player) isKindOf "fza_ah64base") then {
     if (vehicle player != _heli && !(vehicle player isKindOf "fza_ah64base") || !(alive _heli) && !(vehicle player isKindOf "fza_ah64base") || !(alive player)) then {
         fza_ah64_pnvsgreff ppEffectEnable false;
     };
-
     _headcenter = inputaction "LookCenter";
+
+    if ("fza_ah64_pnvs_fail" in (_heli magazinesturret[-1])) then {
+        fza_ah64_pnvsdir = -1;
+        fza_ah64_pnvselev = 1;
+    };
     _heli animate["pnvs", fza_ah64_pnvsdir];
     _heli animate["pnvs_vert", fza_ah64_pnvselev];
 	
@@ -118,9 +122,4 @@ if (player == driver _heli && (vehicle player) isKindOf "fza_ah64base") then {
 
     fza_ah64_pnvsdir = fza_ah64_pnvsdir min 0.75 max - 0.75;
     fza_ah64_pnvselev = fza_ah64_pnvselev min 1 max - 1;
-
-    if ("fza_ah64_pnvs_fail" in (_heli magazinesturret[-1])) then {
-        fza_ah64_pnvsdir = -1;
-        fza_ah64_pnvselev = 1;
-    };
 };

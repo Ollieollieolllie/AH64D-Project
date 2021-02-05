@@ -168,7 +168,7 @@ do {
         _skinset = 0;
     };
 
-    if (damage _heli < 0.001) then {
+    if (damage _heli < 0.0001) then {
         //////light//////
         _heli setobjecttexture [SEL_DAM_FUSE, ""];
         _heli setobjecttexture [SEL_DAM_GDOOR, ""];
