@@ -184,5 +184,5 @@ if(local _heli && !(player == driver _heli) || !(player == gunner _heli)) then
 	_hostile setVariable ["fza_ah64_shotCounter", 0];*/
 };
 
-sleep 20;
+sleep 15;
 fza_ah64_threatfiring = fza_ah64_threatfiring - [_hostile];
