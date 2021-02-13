@@ -114,10 +114,10 @@ private _objects = fza_ah64_asethreatsdraw apply {
 	private _iconsuffix = "D.paa";
 	private _priority = 0;
 
-	if (_x iskindof "ZSU_Base") then {
+	if (_x iskindof "rhs_zsutank_base") then {
 		_iconformat = "\fza_ah64_US\tex\ICONS\23";
 	};
-	if (_x iskindof "2S6M_Tunguska") then {
+	if (_x iskindof "O_APC_Tracked_02_AA_F") then {
 		_iconformat = "\fza_ah64_US\tex\ICONS\19";
 	};
 

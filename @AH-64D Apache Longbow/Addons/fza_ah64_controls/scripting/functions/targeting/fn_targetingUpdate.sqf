@@ -28,13 +28,13 @@ params ["_heli"];
 		fza_ah64_targetlist = fza_ah64_targetlist + fza_ah64_asethreats;
 		if !(_x in fza_ah64_threattracking) then {
 			fza_ah64_threattracking = fza_ah64_threattracking + [_x];
-			if (_x iskindof "ZSU_Base") then {
+			if (_x iskindof "rhs_zsutank_base") then {
 				["fza_ah64_bt_zsu23", 2.3, "fza_ah64_bt_tracking", 0.65] spawn fza_fnc_playAudio;
 			};
-			if (_x iskindof "2S6M_Tunguska") then {
+			if (_x iskindof "O_APC_Tracked_02_AA_F") then {
 				["fza_ah64_bt_sa19", 1.6, "fza_ah64_bt_tracking", 0.65] spawn fza_fnc_playAudio;
 			};
-			if !((_x iskindof "ZSU_Base") || (_x iskindof "2S6M_Tunguska")) then {
+			if !((_x iskindof "rhs_zsutank_base") || (_x iskindof "O_APC_Tracked_02_AA_F")) then {
 				["fza_ah64_bt_tracking", 0.65] spawn fza_fnc_playAudio;
 			};
 			if (_heli getVariable "fza_ah64_aseautopage" == 1) then {
