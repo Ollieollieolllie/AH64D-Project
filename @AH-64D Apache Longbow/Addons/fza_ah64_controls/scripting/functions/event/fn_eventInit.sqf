@@ -68,7 +68,6 @@ if !(_heli getVariable ["fza_ah64_aircraftInitialised", false]) then {
     _heli setVariable ["fza_ah64_rocketsalvo", 1];
     _heli setVariable ["fza_ah64_tsdmode", "nav"];
 };
-hint "initialized";
 
 [_heli] call fza_fnc_engineInit;
 
