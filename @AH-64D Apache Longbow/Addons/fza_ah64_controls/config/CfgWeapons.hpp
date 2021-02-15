@@ -124,7 +124,7 @@ class CfgWeapons
 		useActionTitle = "";
 		recoil = "Empty";
 		recoilProne = "Empty";
-		dispersion = 0.006;
+		dispersion = 0.008;
 		aiRateOfFire = 0.102;
 		aiRateOfFireDistance = 2800;
 		minRange = 1200;
