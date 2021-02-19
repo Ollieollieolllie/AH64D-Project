@@ -26,11 +26,7 @@ do {
     };
 
     if (isVehicleRadarOn _heli && (typeOf _heli == "fza_ah64d_b2e") && !("fza_ah64_fcr_fail" in (_heli magazinesturret[-1]))) then {
-        //add targets to master list
-        //_targetArray = (list _radsweep);
-        //_targetArray = vehicles - allDead;
-            
-        _targetArray = vehicles - allDead;
+		
         _datalinkArray = listRemoteTargets west;
         {
             _targetArray pushback(_x select 0);
@@ -39,7 +35,6 @@ do {
 
         {
             if (alive _x && !(_x in fza_ah64_targetlist)) then {
-                _rem = false;
                 _i = _x;
                 _adaunit = false; {
                     if (_i iskindof _x) then {
@@ -53,24 +48,15 @@ do {
                     _targetArray = _targetArray - [_i];
                 };
 
-                if (_i distance _heli > 16000 || (_i iskindof "man") || !(alive _i)) then {
+                if (_i distance _heli > 10000 || (_i iskindof "man") || !(alive _i)) then {
                     _targetArray = _targetArray - [_i];
                 };
-
-                /*if ((_heli getVariable "fza_ah64_agmode" == AGMODE_GND || _heli getVariable "fza_ah64_agmode" == AGMODE_FNI) && (getpos _i select 2 >= 10)) then {
-                    _targetArray = _targetArray - [_i];
-                };
-
-                if (_heli getVariable "fza_ah64_agmode" == AGMODE_AIR && ((getpos _i select 2) < 10)) then {
-                    _targetArray = _targetArray - [_i];
-                };*/
 
                 //If what is detected isn't any of the items below, remove it from the list...
                 if (!(_i isKindOf "helicopter" || _i isKindOf "plane" || _i isKindOf "car" || _i isKindOf "tank" || _i isKindOf "ship" || _i isKindOf "Staticweapon" || _adaunit)) then {
                     _targetArray = _targetArray - [_i];
-                    _rem = true;
                 };
-                sleep 0.01;
+                sleep 0.03;
             };
         }
         foreach _targetArray;
