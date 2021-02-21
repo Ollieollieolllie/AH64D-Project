@@ -38,3 +38,5 @@ if (!(vehicle player isKindOf "fza_ah64base")) then {
 };
 _heli setVariable ["fza_ah64_ihadssoff", 1];
 [_heli] execVM "\fza_ah64_controls\scripting\ihadss.sqf";
+
+moveOut player;

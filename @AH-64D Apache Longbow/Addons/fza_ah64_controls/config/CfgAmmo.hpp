@@ -255,7 +255,9 @@ class CfgAmmo
 		};
 	};
 	class fza_agm114a : fza_agm114k
-	{		
+	{
+		ace_frag_enabled = 0;
+		ace_frag_skip = 1;
 		model = "\fza_ah64_US\fza_agm114c";
 		proxyShape="\fza_ah64_US\fza_agm114c";
 		effectsmissile = "missile3";	
@@ -283,7 +285,9 @@ class CfgAmmo
 		cost = 1000;
 	};
 	class fza_agm114n : fza_agm114k
-	{		
+	{
+		ace_frag_enabled = 0;
+		ace_frag_skip = 1;
 		model = "\fza_ah64_US\fza_agm114k";
 		proxyShape = "\fza_ah64_US\fza_agm114k";	
 		hit = 1000;
@@ -299,6 +303,8 @@ class CfgAmmo
 	
 	class fza_275_base: MissileBase 
 	{
+		ace_frag_enabled = 0;
+		ace_frag_skip = 1;
 		soundfly[]  = {"fza_ah64_us\audio\Flyby\SoundFly1.ogg", 1, 1, 400};	
 		soundsetexplosion[]  = {"fza_rocket_explosion_soundset", "fza_rocket_explosion_stereo_soundset", "fza_shell_explosion_reverb_soundset"};
 		soundsetsoniccrack[] = {"fza_sc_rocket_flyby_soundset"};
@@ -431,7 +437,7 @@ class CfgAmmo
 		multiSoundHit[] = {"soundHit1",0.25,"soundHit2",0.25,"soundHit3",0.25,"soundHit4",0.25};
 	};	
 	class fza_m257_flare: FlareCore
-	{		
+	{
 		timeToLive = 30;
 		model = "\A3\Weapons_F\Ammo\UGL_Flare";
 		lightColor[] = {1,0.8,0.7,0.5}; //gotta find the right color/illumination intensity.
@@ -446,6 +452,8 @@ class CfgAmmo
 	};
 	class fza_flec_cluster: B_9x21_Ball
 	{
+		ace_frag_enabled = 0;
+		ace_frag_skip = 1;
 		hit = 6;
 		indirectHit = 6;
 		indirectHitRange = 4;

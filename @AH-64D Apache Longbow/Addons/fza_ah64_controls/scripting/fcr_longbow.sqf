@@ -58,7 +58,7 @@ do {
                 if (!(_i isKindOf "helicopter" || _i isKindOf "plane" || _i isKindOf "car" || _i isKindOf "tank" || _i isKindOf "ship" || _i isKindOf "Staticweapon" || _adaunit)) then {
                     _targetArray = _targetArray - [_i];
                 };
-                sleep 0.01;
+                sleep 0.03;
             };
         }
         foreach _targetArray;

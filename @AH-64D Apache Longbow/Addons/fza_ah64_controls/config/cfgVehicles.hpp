@@ -479,7 +479,7 @@ class CfgVehicles
 			};
 			class HitAvionics
 			{
-				armor = 2;
+				armor = 1;
 				material = 51;
 				name = "cockpit";
 				passthrough = 0.5;
@@ -499,14 +499,14 @@ class CfgVehicles
 			};
 			class HitTransmission
 			{
-				armor = 3.5;
+				armor = 1.5;
 				material = -1;
 				name = "trans";
 				passthrough = 0.25;
 			};
 			class HitEngine
 			{
-				armor = 4;
+				armor = 2;
 				material = 51;
 				name = "trans";
 				passthrough = 0.25;
@@ -519,7 +519,7 @@ class CfgVehicles
 			};
 			class HitEngine1
 			{
-				armor = 2.3;
+				armor = 2;
 				material = 51;
 				name = "leng";
 				passthrough = 1;
@@ -531,7 +531,7 @@ class CfgVehicles
 			};
 			class HitEngine2
 			{
-				armor = 2.3;
+				armor = 2;
 				material = 51;
 				name = "reng";
 				passthrough = 1;
@@ -543,7 +543,7 @@ class CfgVehicles
 			};
 			class Hitlfab
 			{
-				armor = 2;
+				armor = 0.5;
 				material = 51;
 				name = "lfab";
 				passthrough = 0.1;
@@ -551,7 +551,7 @@ class CfgVehicles
 			};
 			class Hitrfab
 			{
-				armor = 2;
+				armor = 0.5;
 				material = 51;
 				name = "rfab";
 				passthrough = 0.1;
@@ -583,7 +583,7 @@ class CfgVehicles
 			};
 			class Hitlwing
 			{
-				armor = 1;
+				armor = 0.75;
 				material = 51;
 				name = "lwing";
 				passthrough = 0.1;
@@ -591,7 +591,7 @@ class CfgVehicles
 			};
 			class Hitrwing
 			{
-				armor = 1;
+				armor = 0.75;
 				material = 51;
 				name = "rwing";
 				passthrough = 0.1;
@@ -607,7 +607,7 @@ class CfgVehicles
 			};
 			class HitVTail
 			{
-				armor = 2;
+				armor = 1;
 				material = 51;
 				name = "vtail";
 				passthrough = 0.1;
@@ -615,7 +615,7 @@ class CfgVehicles
 			};
 			class HitHTail
 			{
-				armor = 2;
+				armor = 1;
 				material = 51;
 				name = "hstab";
 				passthrough = 0.1;
@@ -623,7 +623,7 @@ class CfgVehicles
 			};
 			class HitPNVS
 			{
-				armor = 1.2;
+				armor = 0.25;
 				material = 51;
 				name = "pnvs";
 				passthrough = 0.1;
@@ -631,7 +631,7 @@ class CfgVehicles
 			};
 			class Hittads
 			{
-				armor = 2;
+				armor = 1;
 				material = 51;
 				name = "tads";
 				passthrough = 0.1;
@@ -639,7 +639,7 @@ class CfgVehicles
 			};
 			class Hittadstur
 			{
-				armor = 2;
+				armor = 1;
 				material = 51;
 				name = "tads_tur";
 				passthrough = 0.1;
@@ -647,7 +647,7 @@ class CfgVehicles
 			};
 			class Hitradar
 			{
-				armor = 1.5;
+				armor = 0.1;
 				material = 51;
 				name = "radar";
 				passthrough = 0.1;
@@ -655,7 +655,7 @@ class CfgVehicles
 			};
 			class Hitotocvez
 			{
-				armor = 1;
+				armor = 0.25;
 				material = 51;
 				name = "otocvez";
 				passthrough = 0.1;
@@ -663,7 +663,7 @@ class CfgVehicles
 			};
 			class Hitotochlaven
 			{
-				armor = 2;
+				armor = 0.25;
 				material = 51;
 				name = "otochlaven";
 				passthrough = 0.1;
@@ -671,7 +671,7 @@ class CfgVehicles
 			};
 			class Hitmaingear
 			{
-				armor = 0.2;
+				armor = 0.25;
 				material = 51;
 				name = "maingear";
 				passthrough = 0.1;
@@ -679,7 +679,7 @@ class CfgVehicles
 			};
 			class Hittwsus
 			{
-				armor = 0.2;
+				armor = 0.25;
 				material = 51;
 				name = "twsus";
 				passthrough = 0.1;
