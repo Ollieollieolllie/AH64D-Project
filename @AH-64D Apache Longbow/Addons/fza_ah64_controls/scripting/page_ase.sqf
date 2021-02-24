@@ -1,4 +1,4 @@
-#include "\fza_ah64_controls\headers\selections.h"
+/*#include "\fza_ah64_controls\headers\selections.h"
 if (!(isNil "fza_ah64_noase")) exitwith {};
 _heli = _this select 0;
 while {

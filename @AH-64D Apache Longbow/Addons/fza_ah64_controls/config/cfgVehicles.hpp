@@ -1602,13 +1602,13 @@ initPhase=0;
             {
 				source = "user";
 				animPeriod = 1.5;
-				initPhase=1;
+				initPhase=0;
             };
 			class plt_eng2_throttle
             {
 				source = "user";
 				animPeriod = 1.5;
-				initPhase=1;
+				initPhase=0;
             };
 			/*
 			class plt_floodlamps

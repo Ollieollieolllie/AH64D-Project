@@ -23,6 +23,6 @@ params["_heli"];
 if (!local _heli) exitWith {};
 
 _heli setVariable["fza_ah64_engineStates", [
-    ["FLY", 0],
-    ["FLY", 0]
+    ["OFF", 0],
+    ["OFF", 0]
 ], true];
