@@ -72,6 +72,7 @@ class CfgFunctions
 		class event
 		{
 			file = "\fza_ah64_controls\scripting\functions\event";
+			class eventeject{R;};
 			class eventFired{R;};
 			class eventGetIn{R;};
 			class eventGetOut{R;};
