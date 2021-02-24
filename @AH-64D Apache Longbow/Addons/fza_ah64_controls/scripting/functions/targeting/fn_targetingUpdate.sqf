@@ -18,7 +18,7 @@ Examples:
 Author:
 	Unknown
 ---------------------------------------------------------------------------- */
-/*params ["_heli"];
+params ["_heli"];
 
 fza_ah64_asethreats = vehicles - alldead;
 fza_ah64_asethreats = fza_ah64_asethreats select {alive _x && _x call fza_fnc_targetIsADA};
