@@ -68,7 +68,7 @@ class CfgAmmo
 		hit = 327;
 		cmImmunity = 1;
 		indirectHit = 30;
-		indirectHitRange = 5
+		indirectHitRange = 5;
 	};
 	
 	///////////////////////////////////////////////////////////////////////
@@ -224,7 +224,7 @@ class CfgAmmo
 		missileLockCone = 50;
 		missileKeepLockedCone = 50;
 		missileManualControlCone = 50;
-		weaponLockSystem = "4 + 16"
+		weaponLockSystem = "4 + 16";
 		weaponType = "missileAA";
 		flightProfiles[]	= {TopDown,LoalDistance};
 		class Components : Components

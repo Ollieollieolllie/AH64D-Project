@@ -25,6 +25,12 @@ if(!(_munition isKindOf "missileBase") || !(isengineon _heli || (alive _heli))) 
 
 _missile = nearestobject [_hostile,_munition];
 
+{
+    if (_hostile iskindof _x && _heli getVariable "fza_ah64_irjstate" == 1 && _heli getVariable "fza_ah64_irjon" == 0 ) then {
+        _irjammerscript = [_heli] execvm "\fza_ah64_controls\scripting\ir_jammer.sqf";
+    };
+}
+foreach fza_ah64_ada_units;
 
 ////Reduces the missiles 2 cores to 1 activation
 _fza_ah64_incominghandled2 = _hostile getVariable ["fza_ah64_shotCounter2", 0];
@@ -47,3 +53,9 @@ while {(_flarecount < 3) && (alive _heli)} do {
 	[vehicle player, "fza_CMFlareLauncher", [-1]] call BIS_fnc_fire;
 	_flarecount = _flarecount + 1;
 };
+
+//kill jammer after script
+if (_heli getVariable "fza_ah64_irjstate" == 1) then {_heli setVariable ["fza_ah64_irjon", 0, true];};
+
+sleep 15;
+fza_ah64_threatfiring = fza_ah64_threatfiring - [_hostile];
