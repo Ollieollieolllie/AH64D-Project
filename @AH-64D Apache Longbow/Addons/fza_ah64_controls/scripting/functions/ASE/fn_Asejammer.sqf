@@ -11,10 +11,11 @@ Parameters:
     _hostile - is it hostile
 
 Returns:
-	
+	Nothing
 
 Examples:
-
+	_this spawn fza_fnc_Asejammer;
+	
 Author:
 	ollieollieolllie
 ---------------------------------------------------------------------------- */
@@ -55,7 +56,7 @@ if(typeOf _heli == "fza_ah64d_b2e" || typeOf _heli == "fza_ah64d_b2exp" || typeO
 
 {
     if (_hostile iskindof _x && _heli getVariable "fza_ah64_rfjstate" == 1 && _heli getVariable "fza_ah64_rfjon" == 0 ) then {
-        _rfjammerscript = [_heli] execvm "\fza_ah64_controls\scripting\rf_jammer.sqf";
+        _rfjammerscript = _this spawn fza_fnc_aseHandleRfcontrol;
     };
 }
 foreach fza_ah64_ada_units;

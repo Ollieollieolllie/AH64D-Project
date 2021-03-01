@@ -10,9 +10,10 @@ Parameters:
     _hostile - is it hostile
 
 Returns:
-	
+    Nothing
 
 Examples:
+    _this spawn fza_fnc_AseFlaredeploy;
 
 Author:
 	ollieollieolllie
@@ -27,7 +28,7 @@ _missile = nearestobject [_hostile,_munition];
 
 {
     if (_hostile iskindof _x && _heli getVariable "fza_ah64_irjstate" == 1 && _heli getVariable "fza_ah64_irjon" == 0 ) then {
-        _irjammerscript = [_heli] execvm "\fza_ah64_controls\scripting\ir_jammer.sqf";
+        _irjammerscript = _this spawn fza_fnc_aseHandleIrcontrol;
     };
 }
 foreach fza_ah64_ada_units;
@@ -48,7 +49,7 @@ sleep 1;
 [vehicle player, "fza_CMFlareLauncher", [-1]] call BIS_fnc_fire;
 
 _flarecount = 0;
-while {(_flarecount < 3) && (alive _heli)} do {
+while {(_flarecount < 3) && (alive _heli) && (_heli getVariable "fza_ah64_irjstate" == 1)} do {
 	sleep 4;
 	[vehicle player, "fza_CMFlareLauncher", [-1]] call BIS_fnc_fire;
 	_flarecount = _flarecount + 1;
