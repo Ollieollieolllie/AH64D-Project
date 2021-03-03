@@ -50,6 +50,10 @@
 	}
 ] call CBA_fnc_addSetting;
 
+
+if(isNil "fza_ah64_desiglist") then {fza_ah64_desiglist = [];};
+fza_ah64_ldrfcall = compile preprocessFileLineNumbers "\fza_ah64_controls\scripting\Call_ldrf.sqf";
+
 fza_ah64_rocketweps14 = ["fza_m261_1234_zoneE", "fza_m261_14", "fza_m261_14_zoneA", "fza_m261_14_zoneB", "fza_m261_14_zoneE"];
 fza_ah64_rocketweps23 = ["fza_m261_1234_zoneE", "fza_m261_23", "fza_m261_23_zoneC", "fza_m261_23_zoneD", "fza_m261_23_zoneE"];
 fza_ah64_rocketweps1 = ["fza_m261_1", "fza_m261_1_zone1", "fza_m261_1_zone2", "fza_m261_1_zone3"];
@@ -132,7 +136,7 @@ fza_ah64_headelev = 0;
 fza_ah64_cmpressed = 0;
 fza_ah64_nohelpers = 1;
 fza_ah64_hducolor = [0.1, 1, 0, 1];
-fza_ah64_schedarray = [fza_fnc_weaponTurretAim, fza_fnc_targetingPNVSControl, fza_fnc_targetingSched, fza_fnc_avionicsSlipIndicator, fza_fnc_navigationWaypointEta, fza_fnc_damageRotors, fza_fnc_ihadssDraw, fza_fnc_targetingUpdate, fza_fnc_engineGovernor, fza_fnc_mpdUpdateDisplays]; //disabled fza_ah64_cpg_controls//
+fza_ah64_schedarray = [fza_fnc_weaponTurretAim, fza_fnc_targetingPNVSControl, fza_fnc_targetingSched, fza_fnc_avionicsSlipIndicator, fza_fnc_navigationWaypointEta, fza_fnc_damageRotors, fza_fnc_ihadssDraw, fza_fnc_targetingUpdate, fza_fnc_engineGovernor, fza_fnc_mpdUpdateDisplays, fza_ah64_ldrfcall]; //disabled fza_ah64_cpg_controls//
 fza_ah64_mapfaker = addMissionEventHandler["Draw3D", {
 	[0] call fza_fnc_coreScheduler;
 }];

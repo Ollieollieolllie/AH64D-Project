@@ -122,7 +122,7 @@ if (_heli getVariable "fza_ah64_ihadssoff" == 1) then {
 if (_heli getVariable "fza_ah64_ihadssoff" == 0 && _heli getVariable "fza_ah64_monocleinbox") then {
     1 cuttext["", "PLAIN", 0.1];
 };
-if (isNull laserTarget _heli) then {
+if (fza_ah64_laserstate == 0) then {
     4 cuttext["", "PLAIN", 0.1];
 };
 
@@ -304,7 +304,7 @@ if (cameraView == "GUNNER" && player == gunner _heli && (_heli animationphase "p
     ((uiNameSpace getVariable "fza_ah64_raddisp") displayCtrl 188) ctrlSetTextColor[0, 0, 0, 0]; //HIDING BAROALT FT
 
     //LASER SYMBOLOGY FOR GUNNER
-    if !(isNull laserTarget _heli) then {
+    if (fza_ah64_laserstate == 1) then {
         4 cutrsc["fza_ah64_laseit", "PLAIN", 0.01, false];
         ((uiNameSpace getVariable "fza_ah64_laseit") displayCtrl 701) ctrlSetText "\fza_ah64_US\tex\HDU\Apache_LaserOn.paa";
         ((uiNameSpace getVariable "fza_ah64_laseit") displayCtrl 701) ctrlSetTextColor[(fza_ah64_hducolor select 1), (fza_ah64_hducolor select 1), (fza_ah64_hducolor select 1), 1];

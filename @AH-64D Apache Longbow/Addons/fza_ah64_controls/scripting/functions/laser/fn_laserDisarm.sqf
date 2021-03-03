@@ -20,6 +20,11 @@ Author:
 ---------------------------------------------------------------------------- */
 params ["_heli"];
 
+if (fza_ah64_laserstate == 1) then {
+	fza_ah64_laserstate = 0;
+};
+
+/*
 if !(isNull laserTarget _heli) then {
     [_heli, "Laserdesignator_mounted", [0]] call BIS_fnc_fire;
 }

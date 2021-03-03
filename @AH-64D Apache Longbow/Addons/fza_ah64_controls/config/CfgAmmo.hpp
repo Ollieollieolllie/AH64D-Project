@@ -215,7 +215,6 @@ class CfgAmmo
 		airLock = 0;
 		irlock = 0;	
 		nvLock=0;
-		manualControl= 1;
 		
 		//MSL sensors definition
 		missileLockMaxDistance = 8000;
@@ -226,7 +225,7 @@ class CfgAmmo
 		missileManualControlCone = 50;
 		weaponLockSystem = "4 + 16";
 		weaponType = "missileAA";
-		flightProfiles[]	= {TopDown,LoalDistance};
+		flightProfiles[]	= {TopDown,LoalDistance,Cruise};
 		class Components : Components
 		{
 			class SensorsManagerComponent

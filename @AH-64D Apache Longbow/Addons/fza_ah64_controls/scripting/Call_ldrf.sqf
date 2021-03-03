@@ -1,11 +1,20 @@
-/*_heli = _this select 0;
-hint str {started};
+params["_heli"];
 private _gunner = gunner _heli;
 
-if(fza_ah64_laserstate == 1 && {player isEqualTo _gunner}) then
+if(fza_ah64_laserstate isEqualTo 1 && {player isEqualTo _gunner}) then
 {
 	private _ah64laser = objNull;
-	_ah64laser = "LaserTargetW" createvehicle [0,0,0];
+	if(count fza_ah64_desiglist < 1) then
+	{
+		_ah64laser = "LaserTargetW" createvehicle [0,0,0];
+		fza_ah64_desiglist pushBack _ah64laser;
+		publicvariable "fza_ah64_desiglist";
+	} else {
+		{
+			if(local _x) exitwith {_ah64laser = _x;};
+		} foreach fza_ah64_desiglist;
+	};
+
 	(group _gunner) reveal _ah64laser;
 
 	if(cameraView isEqualTo "GUNNER") then
