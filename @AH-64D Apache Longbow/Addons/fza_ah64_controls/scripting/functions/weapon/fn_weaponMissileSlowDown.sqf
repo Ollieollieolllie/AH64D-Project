@@ -11,7 +11,7 @@ if (_projectile isKindOf "fza_agm114l") then {
 	};
 };
 
-if (_projectile isKindOf "fza_agm114k" || _projectile isKindOf "fza_fim92") then {
+if (_projectile isKindOf "fza_agm114k" || _projectile isKindOf "Starstreak3_Apache") then {
     _targ = (_heli getVariable "fza_ah64_currentLase");
 	if !(isNull _targ) then {
 		_projectile setMissileTarget _targ;

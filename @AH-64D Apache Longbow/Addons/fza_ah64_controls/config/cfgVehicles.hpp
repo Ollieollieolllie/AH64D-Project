@@ -32,6 +32,7 @@ class CfgVehicles
     	receiveRemoteTargets    = 1;
     	reportRemoteTargets     = 1;
     	reportOwnPosition       = 1;
+		crewCrashProtection = 0;
 		
 		LESH_canBeTowed = 1;
 		LESH_towFromFront = 0;

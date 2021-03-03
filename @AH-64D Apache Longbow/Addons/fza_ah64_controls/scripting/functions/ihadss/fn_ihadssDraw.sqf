@@ -577,7 +577,7 @@ if (_curWeapon in _hellfireweps) then {
 
         _distOffAxis = abs ([[_heli, getPos _heli # 0, getPos _heli # 1, getPos _mistargPos # 0, getPos _mistargPos # 1] call fza_fnc_relativeDirection] call CBA_fnc_simplifyAngle180);
         
-        if (!_terrainobscure && (_obscureobjs - nearestObjects [getpos _mistargPos, ["All"], 10]) isEqualTo [] && _distOffAxis < 40 && !(_heli ammo currentweapon _heli < 1)) then {
+        if (!_terrainobscure && (_obscureobjs - nearestObjects [getpos _mistargPos, ["All"], 10]) isEqualTo [] && _distOffAxis < 40 && !(_heli ammo currentweapon _heli < 1) && !(_mistargpos isKindOf "Staticweapon")) then {
             _w = 0.2202;
             _h = 0.3;
             _apx = 0.108;
@@ -593,7 +593,7 @@ if (_curWeapon in _hellfireweps) then {
             _apx = 0.036;
             _apy = 0.05;
             _allowedDistOffAxis = [6.5, 20] select _radar;
-            if (_distOffAxis < _allowedDistOffAxis) then {
+            if (_distOffAxis < _allowedDistOffAxis && !(_mistargpos isKindOf "Staticweapon")) then {
                 ((uiNameSpace getVariable "fza_ah64_raddisp") displayCtrl 131) ctrlSetText "\fza_ah64_us\tex\HDU\f16_rsc_jhmcs_targ.paa";
             } else {
                 ((uiNameSpace getVariable "fza_ah64_raddisp") displayCtrl 131) ctrlSetText "\fza_ah64_us\tex\HDU\f16_rsc_jhmcs_targ_nolos.paa";

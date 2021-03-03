@@ -103,6 +103,7 @@ fza_ah64_mis_ir = ["M_R73_AA","M_Strela_AA","M_Igla_AA","M_Stinger_AA","M_Sidewi
 fza_ah64_mis_rf = ["M_9M311_AA","ammo_Missile_s750","ammo_Missile_rim162","ammo_Missile_mim145","ammo_Missile_AMRAAM_D","ammo_Missile_AMRAAM_C","ammo_Missile_AA_R77","ammo_Missile_AA_R73","M_Zephyr","M_Titan_AA_long","M_Titan_AA_static"];
 fza_ah64_asethreats = [];
 fza_ah64_asethreatsdraw = [];
+fza_ah64_asecounter = 0;
 fza_ah64_asetimer = 0;
 fza_ah64_threattracking = [];
 fza_ah64_threatfiring = [];

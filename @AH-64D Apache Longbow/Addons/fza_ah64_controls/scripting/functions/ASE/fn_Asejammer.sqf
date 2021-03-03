@@ -54,6 +54,7 @@ if(typeOf _heli == "fza_ah64d_b2e" || typeOf _heli == "fza_ah64d_b2exp" || typeO
 	} foreach fza_ah64_ada_units;
 };
 
+//OPER Auto control
 {
     if (_hostile iskindof _x && _heli getVariable "fza_ah64_rfjstate" == 1 && _heli getVariable "fza_ah64_rfjon" == 0 ) then {
         _rfjammerscript = _this spawn fza_fnc_aseHandleRfcontrol;

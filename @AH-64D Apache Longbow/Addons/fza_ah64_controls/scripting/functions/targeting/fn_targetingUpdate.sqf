@@ -19,13 +19,19 @@ Author:
 	Unknown
 ---------------------------------------------------------------------------- */
 params ["_heli"];
+if (fza_ah64_asecounter == 0) then {
+	fza_ah64_asethreats = vehicles - alldead;
+};
+fza_ah64_asecounter = fza_ah64_asecounter + 1;
+If (fza_ah64_asecounter == 100) then {
+	fza_ah64_asecounter = 0;
+};
 
-fza_ah64_asethreats = vehicles - alldead;
 fza_ah64_asethreats = fza_ah64_asethreats select {alive _x && _x call fza_fnc_targetIsADA};
 {
 	if ((_heli == assignedTarget _x || _x AimedAtTarget[_heli] > 0.5) && (alive _x) && !(_x in fza_ah64_threattracking)) then {
 		fza_ah64_threattracking = fza_ah64_threattracking + [_x];
-        fza_ah64_targetlist = fza_ah64_targetlist + [_x];
+		fza_ah64_targetlist = fza_ah64_targetlist + [_x];
 		if (_x iskindof "rhs_zsutank_base") then {
 			["fza_ah64_zsu23_track", 2.3] spawn fza_fnc_playAudio;
 		};

@@ -26,6 +26,7 @@ if(!(_munition isKindOf "missileBase") || !(isengineon _heli || (alive _heli))) 
 
 _missile = nearestobject [_hostile,_munition];
 
+//OPER Auto control
 {
     if (_hostile iskindof _x && _heli getVariable "fza_ah64_irjstate" == 1 && _heli getVariable "fza_ah64_irjon" == 0 ) then {
         _irjammerscript = _this spawn fza_fnc_aseHandleIrcontrol;
