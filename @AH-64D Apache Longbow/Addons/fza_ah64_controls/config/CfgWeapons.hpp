@@ -109,7 +109,7 @@ class CfgWeapons
 		displayName="M230";
 		cursor = "";
 		cursorAim = "";
-		reloadTime=0.102;
+		reloadTime=0.078;  //0.102
 		weaponLockSystem = "8+4";
 		ballisticscomputer = 16;
 		weaponLockDelay = 0;
@@ -124,7 +124,7 @@ class CfgWeapons
 		useActionTitle = "";
 		recoil = "Empty";
 		recoilProne = "Empty";
-		dispersion = 0.008;
+		dispersion = 0.006;
 		aiRateOfFire = 0.102;
 		aiRateOfFireDistance = 2800;
 		minRange = 1200;

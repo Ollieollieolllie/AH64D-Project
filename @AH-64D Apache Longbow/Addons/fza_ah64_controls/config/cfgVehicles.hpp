@@ -863,19 +863,7 @@ class CfgVehicles
 				condition="(player == driver this || player == gunner this) && (speed this < 5) && (alive this)"; //removed CPG action
 				shortcut="";
 				statement="[this] execVM ""\fza_ah64_controls\arming\armingdiag_2.sqf""";
-			};/*
-			class Enginestart
-			{
-				displayName="<t color ='#00ff26'>Engine start</t>";
-				position="pilot_action";
-				onlyForPlayer=1;
-				radius=8;
-				showWindow=0;
-				priority=13;
-				condition="(player == driver this || player == gunner this) && (alive this)"; //removed CPG action
-				shortcut="";
-				statement="[this] execVM ""\fza_ah64_controls\scripting\enginestart.sqf""";
-			};*/
+			};
 		};
 		class MFD {};
 		

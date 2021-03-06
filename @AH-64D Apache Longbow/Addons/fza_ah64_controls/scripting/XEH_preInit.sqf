@@ -108,6 +108,7 @@ fza_ah64_mis_rf = ["M_9M311_AA","ammo_Missile_s750","ammo_Missile_rim162","ammo_
 fza_ah64_asethreats = [];
 fza_ah64_asethreatsdraw = [];
 fza_ah64_asecounter = 0;
+fza_ah64_aseaudio = 0;
 fza_ah64_asetimer = 0;
 fza_ah64_threattracking = [];
 fza_ah64_threatfiring = [];

@@ -1,5 +1,5 @@
 /* ----------------------------------------------------------------------------
-Function: fza_fnc_Asejammer
+Function: fza_fnc_asejammer
 
 Description:
     Audio & text warning of direction of incoming missile
@@ -14,7 +14,7 @@ Returns:
 	Nothing
 
 Examples:
-	_this spawn fza_fnc_Asejammer;
+	_this spawn fza_fnc_asejammer;
 	
 Author:
 	ollieollieolllie

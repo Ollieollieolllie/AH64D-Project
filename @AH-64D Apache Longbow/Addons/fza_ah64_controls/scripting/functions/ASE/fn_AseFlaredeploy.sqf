@@ -1,5 +1,5 @@
 /* ----------------------------------------------------------------------------
-Function: fza_fnc_AseFlaredeploy
+Function: fza_fnc_aseFlaredeploy
 
 Description:
     deploys flare if ir jam enables on ase
@@ -13,7 +13,7 @@ Returns:
     Nothing
 
 Examples:
-    _this spawn fza_fnc_AseFlaredeploy;
+    _this spawn fza_fnc_aseFlaredeploy;
 
 Author:
 	ollieollieolllie

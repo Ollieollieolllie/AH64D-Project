@@ -74,5 +74,5 @@ do {
         _heli animate["mainTurret", _curcontrol,4];
         _heli animate["mainGun", _curguncontrol,4];
     };
-    sleep 0.03;
+    sleep 0.05;
 };

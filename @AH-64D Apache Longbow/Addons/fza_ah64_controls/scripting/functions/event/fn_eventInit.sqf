@@ -1966,5 +1966,5 @@ do {
         _heli setobjecttexture [SEL_AUXTANK_3, ""];
         _heli setobjecttexture [SEL_AUXTANK_4, ""];
     };
-    sleep 0.03;
+    sleep 0.05;
 };

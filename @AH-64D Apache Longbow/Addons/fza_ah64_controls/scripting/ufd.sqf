@@ -407,5 +407,5 @@ do {
         //warnings//
         _w = [_heli, 1063, 1067, []] call _wcacall;
     };
-    sleep 0.1;
+    sleep 0.3;
 };
