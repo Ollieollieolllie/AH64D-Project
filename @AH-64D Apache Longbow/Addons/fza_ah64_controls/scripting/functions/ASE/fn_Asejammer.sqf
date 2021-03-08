@@ -155,7 +155,7 @@ if(local _heli && !(player == driver _heli) || !(player == gunner _heli)) then
 	_rand = 4;
 
 	////ASE PAGE LINK////
-	waitUntil {((_heli getVariable "fza_ah64_rfjstate" == 1) || (_heli getVariable "fza_ah64_rfjon" == 1) || !(alive _missile))};
+	//waitUntil {((_heli getVariable "fza_ah64_rfjstate" == 1) || (_heli getVariable "fza_ah64_rfjon" == 1) || !(alive _missile))};
 	if !(alive _missile) exitwith {};
 	////ASE PAGE LINK END////
 

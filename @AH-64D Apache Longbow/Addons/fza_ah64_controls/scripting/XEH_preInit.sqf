@@ -112,6 +112,7 @@ fza_ah64_aseaudio = 0;
 fza_ah64_asetimer = 0;
 fza_ah64_threattracking = [];
 fza_ah64_threatfiring = [];
+fza_ah64_Targetsched = 0;
 fza_ah64_mycurrenttarget = objNull;
 fza_ah64_pfz1 = [];
 fza_ah64_pfz2 = [];

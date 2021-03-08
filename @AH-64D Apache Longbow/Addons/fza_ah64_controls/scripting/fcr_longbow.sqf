@@ -36,7 +36,6 @@ do {
 
         {
             if (alive _x && !(_x in fza_ah64_targetlist)) then {
-                _rem = false;
                 _i = _x;
                 _adaunit = false; {
                     if (_i iskindof _x) then {
@@ -58,7 +57,7 @@ do {
                 if (!(_i isKindOf "helicopter" || _i isKindOf "plane" || _i isKindOf "car" || _i isKindOf "tank" || _i isKindOf "ship" || _i isKindOf "Staticweapon" || _adaunit)) then {
                     _targetArray = _targetArray - [_i];
                 };
-                sleep 0.05;
+                sleep 0.03;
             };
         }
         foreach _targetArray;

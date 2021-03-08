@@ -21,13 +21,13 @@ Author:
 params ["_heli"];
 if (fza_ah64_asecounter == 0) then {
 	fza_ah64_asethreats = vehicles - alldead;
-	fza_ah64_asecounter = 1000;
+	fza_ah64_asecounter = 500;
 } else {
 	fza_ah64_asecounter = fza_ah64_asecounter - 1;
 };
 
 fza_ah64_aseaudio = fza_ah64_aseaudio + 1;
-If (fza_ah64_aseaudio >= 50) then {
+If (fza_ah64_aseaudio >= 25) then {
 	fza_ah64_aseaudio = 0;
 	fza_ah64_asethreats = fza_ah64_asethreats select {alive _x && _x call fza_fnc_targetIsADA};
 	{

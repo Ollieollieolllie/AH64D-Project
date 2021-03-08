@@ -40,7 +40,7 @@ _hostile setVariable ["fza_ah64_shotCounter2", (_fza_ah64_incominghandled2 + 1) 
 if (_fza_ah64_incominghandled2 % 2 == 1) exitWith {};
 
 ////ASE PAGE LINK////
-waitUntil {((_heli getVariable "fza_ah64_irjstate" == 1) || (_heli getVariable "fza_ah64_irjon" == 1) || !(alive _missile))};
+//waitUntil {((_heli getVariable "fza_ah64_irjstate" == 1) || (_heli getVariable "fza_ah64_irjon" == 1) || !(alive _missile))};
 if !(alive _missile) exitwith {};
 ////ASE PAGE LINK END////
 

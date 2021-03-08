@@ -1,4 +1,4 @@
-_heli = _this select 0;
+/*_heli = _this select 0;
 _pfznum = _this select 1;
 _pfz = [];
 fza_ah64_pfz_counter = 0;
