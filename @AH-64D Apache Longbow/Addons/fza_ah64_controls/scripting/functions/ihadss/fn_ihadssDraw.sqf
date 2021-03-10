@@ -727,7 +727,7 @@ if (currentweapon _heli == "Laserdesignator_mounted") then {
 };
 
 //CSCOPE
-
+_targetsToDraw = ([_heli, fza_ah64_Cscopelist] call fza_fnc_targetingFilterType);
 if (_heli getVariable "fza_ah64_fcrcscope") then {
     _num = 190; {
         if (_num > 319) exitwith {};
@@ -762,9 +762,9 @@ if (_heli getVariable "fza_ah64_fcrcscope") then {
         ((uiNameSpace getVariable "fza_ah64_raddisp") displayCtrl _num) ctrlCommit 0;
         _num = _num + 1;
     }
-    foreach fza_ah64_Cscopelist;
+    foreach _targetsToDraw;
 
-    if (_num > (count fza_ah64_Cscopelist + 189)) then {
+    if (_num > (count _targetsToDraw + 189)) then {
         while {
             (_num < 320)
         }

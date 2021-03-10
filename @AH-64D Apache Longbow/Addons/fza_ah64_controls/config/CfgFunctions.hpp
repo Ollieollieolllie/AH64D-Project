@@ -29,6 +29,7 @@ class CfgFunctions
 			class coreGetObjectsLookedAt {R;};
 			class coreGetWCAs {R;};
 			class coreScheduler {R;};
+			class coreSlowscheduler {R;};
 		};
 		class damage {
 			file = "\fza_ah64_controls\scripting\functions\damage";
@@ -178,6 +179,7 @@ class CfgFunctions
 			class targetingSched {R;};
 			class targetingSetAcquisitionSource {R;};
 			class targetingUpdate {R;};
+			class targetingVariable {R;};
 		};
 		class ui
 		{

@@ -70,7 +70,9 @@ fza_ah64_laserstate = 0;
 fza_ah64_gunheat = 0;
 fza_ah64_firekeypressed = 0;
 fza_ah64_overallticker = 0;
+fza_ah64_overalltickerslow = 0;
 fza_ah64_pf_daytime = 0;
+fza_ah64_pf_daytime_Slow = 0;
 fza_ah64_fire1arm = 0;
 fza_ah64_fire2arm = 0;
 fza_ah64_fireapuarm = 0;
@@ -107,12 +109,13 @@ fza_ah64_mis_ir = ["M_R73_AA","M_Strela_AA","M_Igla_AA","M_Stinger_AA","M_Sidewi
 fza_ah64_mis_rf = ["M_9M311_AA","ammo_Missile_s750","ammo_Missile_rim162","ammo_Missile_mim145","ammo_Missile_AMRAAM_D","ammo_Missile_AMRAAM_C","ammo_Missile_AA_R77","ammo_Missile_AA_R73","M_Zephyr","M_Titan_AA_long","M_Titan_AA_static"];
 fza_ah64_asethreats = [];
 fza_ah64_asethreatsdraw = [];
+fza_ah64_aseAudio = [];
 fza_ah64_asecounter = 0;
 fza_ah64_aseaudio = 0;
 fza_ah64_asetimer = 0;
 fza_ah64_threattracking = [];
 fza_ah64_threatfiring = [];
-fza_ah64_Targetsched = 0;
+//fza_ah64_Targetsched = 0;
 fza_ah64_mycurrenttarget = objNull;
 fza_ah64_pfz1 = [];
 fza_ah64_pfz2 = [];
@@ -138,9 +141,11 @@ fza_ah64_headelev = 0;
 fza_ah64_cmpressed = 0;
 fza_ah64_nohelpers = 1;
 fza_ah64_hducolor = [0.1, 1, 0, 1];
-fza_ah64_schedarray = [fza_fnc_weaponTurretAim, fza_fnc_targetingPNVSControl, fza_fnc_targetingSched, fza_fnc_avionicsSlipIndicator, fza_fnc_navigationWaypointEta, fza_fnc_damageRotors, fza_fnc_ihadssDraw, fza_fnc_targetingUpdate, fza_fnc_engineGovernor, fza_fnc_mpdUpdateDisplays, fza_ah64_ldrfcall]; //disabled fza_ah64_cpg_controls//
+fza_ah64_schedarray = [fza_fnc_weaponTurretAim, fza_fnc_targetingPNVSControl, fza_fnc_targetingSched, fza_fnc_avionicsSlipIndicator, fza_fnc_navigationWaypointEta, fza_fnc_damageRotors, fza_fnc_ihadssDraw, fza_fnc_engineGovernor, fza_fnc_mpdUpdateDisplays, fza_ah64_ldrfcall]; //disabled fza_ah64_cpg_controls//
+fza_ah64_Slowschedarray = [fza_fnc_targetingVariable, fza_fnc_targetingUpdate];
 fza_ah64_mapfaker = addMissionEventHandler["Draw3D", {
-	[0] call fza_fnc_coreScheduler;
+	[0] call fza_fnc_coreScheduler,
+	[0] call fza_fnc_coreSlowscheduler;
 }];
 fza_ah64_ada_units = ["vme_PLA_DK9","VME_PLA_HQ64","VME_PLA_HQ7","VME_PLA_PGZ04","VME_PLA_EQ2050_AA","RHS_Stinger_AA_pod_Base","SAM_System_01_base_F","SAM_System_03_base_F",
 "Radar_System_01_base_F","SAM_System_02_base_F","AAA_System_01_base_F","RHS_ZU23_base","rhs_Igla_AA_pod_Base","AA_01_base_F","Radar_System_02_base_F","SAM_System_04_base_F",
