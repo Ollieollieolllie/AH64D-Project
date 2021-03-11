@@ -159,8 +159,8 @@ if(local _heli && !(player == driver _heli) || !(player == gunner _heli)) then
 	if !(alive _missile) exitwith {};
 	////ASE PAGE LINK END////
 
-	if(typeof _missile in fza_ah64_mis_ir) then {_rand = 5;};
-	if(typeof _missile in fza_ah64_mis_rf) then {_rand = 4;};
+	if(typeof _missile in fza_ah64_mis_ir) then {_rand = 5;}; //50%
+	if(typeof _missile in fza_ah64_mis_rf) then {_rand = 4;}; //40%
 	if (floor random 10 < _rand) exitwith {};
 	waitUntil {_missile distance _heli < 350};
 	while {(alive _missile) && (alive _heli)} do

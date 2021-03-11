@@ -16,7 +16,7 @@ Examples:
 	---
 
 Author:
-	Unknown
+	Ollieollieolllie
 ---------------------------------------------------------------------------- */
 if (!(isNil "fza_ah64_nopfsched")) exitwith {};
 params["", "_heli", "_ticker"];

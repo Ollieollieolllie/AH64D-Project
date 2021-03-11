@@ -16,7 +16,7 @@ Examples:
 	---
 
 Author:
-	Unknown
+	Ollieollieolllie
 ---------------------------------------------------------------------------- */
 params ["_heli"];
 if (!(player in _heli)) exitwith {};
@@ -52,25 +52,13 @@ if (([_heli, 1] call fza_fnc_mpdGetCurrentDisplay == "fcr") && !(cameraView == "
 	};
 };
 
-
-//CSCOPE LIST
-if (_heli getVariable "fza_ah64_fcrcscope") then {
-	fza_ah64_Cscopelist = fza_ah64_targetlist select {
-		_thetafcr = [_heli, (getposatl _heli select 0), (getposatl _heli select 1), (getposatl _x select 0), (getposatl _x select 1)] call fza_fnc_relativeDirection;
-
-		switch (_heli getVariable "fza_ah64_agmode") do {
-			case 0: {
-				!((getposatl _x select 2 > 10) || (_thetafcr > 70 && _thetafcr < 290) || !(alive _x))
-			};
-			case 1: {
-				!((getposatl _x select 2 < 10) || !(alive _i))
-			};
-			default {
-				true
-			};
-		};
-	};
+//ASE LIST
+if (([_heli, 1] call fza_fnc_mpdGetCurrentDisplay == "ase") && !(cameraView == "GUNNER")) then {
+	fza_ah64_asethreatsdraw = fza_ah64_targetlist select {alive _x && _x call fza_fnc_targetIsADA};
 };
+
+//RWR AUDIO
+fza_ah64_asethreats = vehicles - alldead;
 
 
 //SELECTABLE TARGETS
@@ -91,10 +79,25 @@ _visibleTargets =
 	};
 
 
-//ASE PAGE VISUAL
-if (([_heli, 1] call fza_fnc_mpdGetCurrentDisplay == "ase") && !(cameraView == "GUNNER")) then {
-	fza_ah64_asethreatsdraw = fza_ah64_targetlist select {alive _x && _x call fza_fnc_targetIsADA && [side _x, side _heli] call BIS_fnc_sideIsEnemy};
+//ofset it by 1 second so it alternated between mpd variable and cscope// ran every 2 second delay by 1
+//CSCOPE LIST
+[] spawn {
+	sleep 1;
 };
+if (_heli getVariable "fza_ah64_fcrcscope") then {
+	fza_ah64_Cscopelist = fza_ah64_targetlist select {
+		_thetafcr = [_heli, (getposatl _heli select 0), (getposatl _heli select 1), (getposatl _x select 0), (getposatl _x select 1)] call fza_fnc_relativeDirection;
 
-//RWR AUDIO
-fza_ah64_asethreats = vehicles - alldead;
+		switch (_heli getVariable "fza_ah64_agmode") do {
+			case 0: {
+				!((getposatl _x select 2 > 10) || (_thetafcr > 70 && _thetafcr < 290) || !(alive _x))
+			};
+			case 1: {
+				!((getposatl _x select 2 < 10) || !(alive _i))
+			};
+			default {
+				true
+			};
+		};
+	};
+};
