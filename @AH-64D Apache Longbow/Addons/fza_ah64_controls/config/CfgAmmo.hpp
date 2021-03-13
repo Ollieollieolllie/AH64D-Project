@@ -52,7 +52,7 @@ class CfgAmmo
 		soundsetbulletfly[] = {"fza_sc_bullet_flyby_soundset"};
 		soundsetsoniccrack[] = {"fza_sc_30x113_soundset"};
 		soundsetexplosion[] = {"fza_20mm_explosion_soundset", "fza_explosion_echo_small_soundset"};
-		hit = 100;
+		hit = 50;
 		indirectHit = 10;
 		indirectHitRange = 5;		
 		maxspeed = 805;
@@ -65,7 +65,7 @@ class CfgAmmo
 
 	class Starstreak3_Apache: Starstreak2_AA
 	{
-		hit = 327;
+		hit = 200;
 		cmImmunity = 1;
 		indirectHit = 30;
 		indirectHitRange = 5;
@@ -180,8 +180,8 @@ class CfgAmmo
 		proxyShape="\fza_ah64_US\fza_agm114l";
 		simulation = "shotMissile";
 		
-		hit = 1400;
-		indirectHit = 1000;
+		hit = 400;
+		indirectHit = 4000;
 		indirectHitRange = 10;
 		cost = 1000;	
 
@@ -206,8 +206,8 @@ class CfgAmmo
 		model = "\fza_ah64_US\fza_agm114k";
 		proxyShape="\fza_ah64_US\fza_agm114k";	
 		
-		hit = 1400;
-		indirectHit = 1000;
+		hit = 400;
+		indirectHit = 400;
 		indirectHitRange = 10;
 		cost = 1000;	
 
@@ -260,8 +260,8 @@ class CfgAmmo
 		model = "\fza_ah64_US\fza_agm114c";
 		proxyShape="\fza_ah64_US\fza_agm114c";
 		effectsmissile = "missile3";	
-		hit = 800;
-		indirectHit = 400;
+		hit = 200;
+		indirectHit = 200;
 		indirectHitRange = 10;
 		cost = 1000;
 	};
@@ -269,8 +269,8 @@ class CfgAmmo
 	{
 		model = "\fza_ah64_US\fza_agm114c";
 		proxyShape="\fza_ah64_US\fza_agm114c";		
-		hit= 800;
-		indirectHit = 400;
+		hit=300;
+		indirectHit = 300;
 		indirectHitRange = 10;
 		cost = 1000;
 	};
@@ -278,8 +278,8 @@ class CfgAmmo
 	{
 		model = "\fza_ah64_US\fza_agm114k";
 		proxyShape ="\fza_ah64_US\fza_agm114k";		
-		hit = 900;
-		indirectHit = 500;
+		hit = 100;
+		indirectHit = 100;
 		indirectHitRange = 100;
 		cost = 1000;
 	};
@@ -289,10 +289,9 @@ class CfgAmmo
 		ace_frag_skip = 1;
 		model = "\fza_ah64_US\fza_agm114k";
 		proxyShape = "\fza_ah64_US\fza_agm114k";	
-		hit = 1000;
-		indirecthit = 1000;
+		hit = 200;
+		indirecthit = 200;
 		indirecthitrange = 50;
-		explosionEffects = "BombExplosion";
 		cost = 1000;
 	};
 	
@@ -311,7 +310,7 @@ class CfgAmmo
 		effectsmissile = "fza_ah64_rocketsmoke";
 		effectsMissileInit = "MissileDAR1";
 		muzzleEffect = "BIS_fnc_effectFiredHeliRocket";
-		hit=210;
+		hit=60;
 		indirectHit=20;
 		indirectHitRange=10;
 		manualControl = 0;
@@ -341,16 +340,16 @@ class CfgAmmo
 	{	
 		model = "\fza_ah64_us\weps\fza_hydra_m151_wep";
 		explosionEffects = "GrenadeExplosion";
-		hit=200;
-		indirectHit=100;
+		hit=60;
+		indirectHit=40;
 		indirectHitRange=10;
 	};			
 	class fza_275_m229: fza_275_base
 	{
 		model = "\fza_ah64_us\weps\fza_hydra_m229_wep";	
 		explosionEffects = "GrenadeExplosion";
-		hit=300;
-		indirectHit=150;
+		hit=80;
+		indirectHit=60;
 		indirectHitRange=20;
 		suppressionRadiusHit = 20;
 
@@ -413,8 +412,8 @@ class CfgAmmo
 		explosionEffects = "ExploAmmoExplosion";
 		CraterEffects = "ExploAmmoCrater";
 		muzzleEffect = "BIS_fnc_effectFiredHeliRocket";
-		hit = 300;
-		indirectHit = 70;
+		hit = 50;
+		indirectHit = 30;
 		indirectHitRange = 20;
 		visibleFire = 1;
 		audibleFire = 30;
@@ -476,7 +475,7 @@ class CfgAmmo
 		explosioneffects = "AAMissileExplosion";
 		muzzleEffect = "fza_ah64_fx_msl_shake";
 		fusedistance = 5;
-		hit = 700;
+		hit = 200;
 		indirecthit = 65;
 		indirecthitrange = 4;
 		inittime = 0.25;

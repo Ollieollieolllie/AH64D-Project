@@ -981,7 +981,7 @@ class CfgVehicles
 		nightVision=1;
 		mainRotorSpeed = 1;
 		threat[] = {1,1,0.700000};
-		armor=100;
+		armor=60;
 		memorypointcm[] = {"flare_beg","flare1_beg"};
 		memorypointcmdir[] = {"flare_end","flare1_end"};
 		weapons[] = {"fza_CMFlareLauncher"};

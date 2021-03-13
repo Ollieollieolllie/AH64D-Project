@@ -40,10 +40,10 @@ if (([_heli, 1] call fza_fnc_mpdGetCurrentDisplay == "fcr") && !(cameraView == "
 
 		switch (_heli getVariable "fza_ah64_agmode") do {
 			case 0: {
-				!((getposatl _x select 2 > 10) || ((_heli distance2D _x) > 16000) || (_thetafcr > 70 && _thetafcr < 290) || !(alive _x))
+				!((getposatl _x select 2 > 10) || ((_heli distance2D _x) > 8000) || (_thetafcr > 70 && _thetafcr < 290) || !(alive _x))
 			};
 			case 1: {
-				!((getposatl _x select 2 < 10) || ((_heli distance2D _x) > 16000) || !(alive _i))
+				!((getposatl _x select 2 < 10) || ((_heli distance2D _x) > 8000) || !(alive _i))
 			};
 			default {
 				true
@@ -90,10 +90,10 @@ if (_heli getVariable "fza_ah64_fcrcscope") then {
 
 		switch (_heli getVariable "fza_ah64_agmode") do {
 			case 0: {
-				!((getposatl _x select 2 > 10) || (_thetafcr > 70 && _thetafcr < 290) || !(alive _x))
+				!((getposatl _x select 2 > 10) || (_thetafcr > 70 && _thetafcr < 290) || !(alive _x) || ((_heli distance2D _x) > 8000))
 			};
 			case 1: {
-				!((getposatl _x select 2 < 10) || !(alive _i))
+				!((getposatl _x select 2 < 10) || !(alive _i) || ((_heli distance2D _x) > 8000))
 			};
 			default {
 				true

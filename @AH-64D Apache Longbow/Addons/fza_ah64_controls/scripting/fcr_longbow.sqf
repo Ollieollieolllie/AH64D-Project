@@ -1,5 +1,3 @@
-//Deleted stuff that wasn't actually used and fixed the ownship appearing on the FCR... - Brad
-
 #define AGMODE_GND 0
 #define AGMODE_AIR 1
 #define AGMODE_FNI 2 //FCR Not Installed (FNI)
@@ -49,7 +47,7 @@ do {
                     _targetArray = _targetArray - [_i];
                 };
 
-                if (_i distance _heli > 16000 || (_i iskindof "man") || !(alive _i)) then {
+                if (_i distance _heli > 8000 || (_i iskindof "man") || !(alive _i)) then {
                     _targetArray = _targetArray - [_i];
                 };
 

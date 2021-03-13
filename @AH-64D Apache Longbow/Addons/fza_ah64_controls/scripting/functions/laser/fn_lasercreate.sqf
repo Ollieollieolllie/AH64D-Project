@@ -1,3 +1,19 @@
+/* ----------------------------------------------------------------------------
+Function: fza_fnc_LaserCreate
+
+Description:
+	Creates apaches laser
+
+Parameters:
+    
+
+Returns:
+
+Examples:
+
+Author:
+	Ollieollieollie
+---------------------------------------------------------------------------- */
 params["_heli"];
 private _gunner = gunner _heli;
 

@@ -90,9 +90,6 @@ if ((weightRTD _heli select 3) == 0) then {
     };
 };
 
-_aiturrets = [_heli] execvm "\fza_ah64_controls\scripting\turrets.sqf";
-_blades = [_heli] execvm "\fza_ah64_controls\scripting\bladerot.sqf";
-
 if (typeOf _heli == "fza_ah64d_b2e") then {
     [_heli] execvm "\fza_ah64_controls\scripting\fcr_animate.sqf";
 };

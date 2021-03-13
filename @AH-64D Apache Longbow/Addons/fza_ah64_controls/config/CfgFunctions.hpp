@@ -99,6 +99,7 @@ class CfgFunctions
 			file = "\fza_ah64_controls\scripting\functions\laser";
 			class laserArm {R;};
 			class laserDisarm {R;};
+			class LaserCreate {R;};
 		}
 		class lighting
 		{

@@ -51,9 +51,6 @@
 ] call CBA_fnc_addSetting;
 
 
-if(isNil "fza_ah64_desiglist") then {fza_ah64_desiglist = [];};
-fza_ah64_ldrfcall = compile preprocessFileLineNumbers "\fza_ah64_controls\scripting\Call_ldrf.sqf";
-
 fza_ah64_rocketweps14 = ["fza_m261_1234_zoneE", "fza_m261_14", "fza_m261_14_zoneA", "fza_m261_14_zoneB", "fza_m261_14_zoneE"];
 fza_ah64_rocketweps23 = ["fza_m261_1234_zoneE", "fza_m261_23", "fza_m261_23_zoneC", "fza_m261_23_zoneD", "fza_m261_23_zoneE"];
 fza_ah64_rocketweps1 = ["fza_m261_1", "fza_m261_1_zone1", "fza_m261_1_zone2", "fza_m261_1_zone3"];
@@ -97,10 +94,6 @@ fza_ah64_wptimtm = 0;
 fza_ah64_wptimsm = 0;
 fza_ah64_wpdistr = 0;
 fza_ah64_tiron = false;
-//fza_ah64_bweff = ppEffectCreate["colorCorrections", 1499];
-//fza_ah64_bweff ppEffectAdjust[0, 0, 0, [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]];
-//fza_ah64_bweff ppEffectCommit 0;
-//fza_ah64_bweff ppEffectEnable false;
 fza_ah64_targetlist = [];
 fza_ah64_mycurrenttarget = objNull;
 fza_ah64_burst = 1;
@@ -113,7 +106,7 @@ fza_ah64_aseAudio = [];
 fza_ah64_asecounter = 0;
 fza_ah64_threattracking = [];
 fza_ah64_threatfiring = [];
-//fza_ah64_Targetsched = 0;
+fza_ah64_desiglist = [];
 fza_ah64_mycurrenttarget = objNull;
 fza_ah64_pfz1 = [];
 fza_ah64_pfz2 = [];
@@ -139,7 +132,7 @@ fza_ah64_headelev = 0;
 fza_ah64_cmpressed = 0;
 fza_ah64_nohelpers = 1;
 fza_ah64_hducolor = [0.1, 1, 0, 1];
-fza_ah64_schedarray = [fza_fnc_weaponTurretAim, fza_fnc_targetingPNVSControl, fza_fnc_targetingSched, fza_fnc_avionicsSlipIndicator, fza_fnc_navigationWaypointEta, fza_fnc_damageRotors, fza_fnc_ihadssDraw, fza_fnc_engineGovernor, fza_fnc_mpdUpdateDisplays, fza_ah64_ldrfcall]; //disabled fza_ah64_cpg_controls//
+fza_ah64_schedarray = [fza_fnc_weaponTurretAim, fza_fnc_targetingPNVSControl, fza_fnc_targetingSched, fza_fnc_avionicsSlipIndicator, fza_fnc_navigationWaypointEta, fza_fnc_damageRotors, fza_fnc_ihadssDraw, fza_fnc_engineGovernor, fza_fnc_mpdUpdateDisplays, fza_fnc_LaserCreate]; //disabled fza_ah64_cpg_controls//
 fza_ah64_Slowschedarray = [fza_fnc_targetingVariable, fza_fnc_targetingUpdate];
 fza_ah64_mapfaker = addMissionEventHandler["Draw3D", {
 	[0] call fza_fnc_coreScheduler,
