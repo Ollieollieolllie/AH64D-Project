@@ -31,7 +31,7 @@ class CfgAmmo
 		initTime = 0;
 		aiAmmoUsageFlags = 8;	
 	};
-	class fza_master: default
+	class fza_master: Default
 	{
 		airLock=1;
 		irLock=0;
@@ -214,7 +214,7 @@ class CfgAmmo
 		missileLockCone = 40;
 		missileKeepLockedCone = 40;
 		missileManualControlCone = 40;
-		weaponLockSystem = "4 + 16"
+		weaponLockSystem = "4 + 16";
 		weaponType = "missileAA";
 		class Components : Components
 		{
