@@ -1,3 +1,19 @@
+/* ----------------------------------------------------------------------------
+Function: fza_fnc_Ufd
+
+Description:
+
+Parameters:
+
+Returns:
+    Nothing
+    
+Examples:
+    [_heli] spawn fza_fnc_Ufd;
+
+Author:
+
+---------------------------------------------------------------------------- */
 #include "\fza_ah64_controls\headers\selections.h"
 if (!(isNil "fza_ah64_noufd")) exitwith {};
 _heli = _this select 0;

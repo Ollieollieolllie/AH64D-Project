@@ -785,7 +785,7 @@ class CfgVehicles
 				priority=10;
 				condition="this animationphase ""pdoor"" < 0.5 && alive this && !(isengineon this)";
 				shortcut="";
-				statement="fza_ah64_pdoor = [this] execvm ""\fza_ah64_controls\scripting\pilotdoor_toggle.sqf""";
+				statement="[this] spawn fza_fnc_Pdoortoggle";
 			};
 			class pilotdoor_close
 			{
@@ -797,7 +797,7 @@ class CfgVehicles
 				priority=10;
 				condition="this animationphase ""pdoor"" > 0.5 && alive this";
 				shortcut="";
-				statement="fza_ah64_pdoor = [this] execvm ""\fza_ah64_controls\scripting\pilotdoor_toggle.sqf""";
+				statement="[this] spawn fza_fnc_Pdoortoggle";
 			};
 			class gundoor_open
 			{
@@ -809,7 +809,7 @@ class CfgVehicles
 				priority=10;
 				condition="this animationphase ""gdoor"" < 0.5 && alive this && !(isengineon this)";
 				shortcut="";
-				statement="fza_ah64_pdoor = [this] execvm ""\fza_ah64_controls\scripting\gundoor_toggle.sqf""";
+				statement="[this] spawn fza_fnc_Gdoortoggle";
 			};
 			class gundoor_close
 			{
@@ -821,7 +821,7 @@ class CfgVehicles
 				priority=10;
 				condition="this animationphase ""gdoor"" > 0.5 && alive this";
 				shortcut="";
-				statement="fza_ah64_pdoor = [this] execvm ""\fza_ah64_controls\scripting\gundoor_toggle.sqf""";
+				statement="[this] spawn fza_fnc_Gdoortoggle";
 			};
 			class tiron
 			{

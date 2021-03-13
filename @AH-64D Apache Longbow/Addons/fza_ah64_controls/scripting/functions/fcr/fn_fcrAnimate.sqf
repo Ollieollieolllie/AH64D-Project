@@ -1,3 +1,19 @@
+/* ----------------------------------------------------------------------------
+Function: fza_fnc_fcrAnimate
+
+Description:
+	
+
+Parameters:
+
+Returns:
+
+Examples:
+    [_heli] spawn fza_fnc_fcrAnimate;
+
+Author:
+
+---------------------------------------------------------------------------- */
 _heli = _this select 0;
 _reverse = 0;
 

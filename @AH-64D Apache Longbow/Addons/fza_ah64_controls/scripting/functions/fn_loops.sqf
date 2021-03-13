@@ -1,3 +1,19 @@
+/* ----------------------------------------------------------------------------
+Function: fza_fnc_loops
+
+Description:
+
+Parameters:
+
+Returns:
+    Nothing
+    
+Examples:
+    [_heli] spawn fza_fnc_loops;
+
+Author:
+
+---------------------------------------------------------------------------- */
 params["_heli"];
 
 private _apu = "Land_ClutterCutter_small_F"

@@ -71,10 +71,16 @@ class CfgFunctions
 		class event
 		{
 			file = "\fza_ah64_controls\scripting\functions\event";
-			class eventFired{R;};
-			class eventGetIn{R;};
-			class eventGetOut{R;};
-			class eventInit{R;};
+			class eventFired {R;};
+			class eventGetIn {R;};
+			class eventGetOut {R;};
+			class eventInit {R;};
+		}
+		class fcr
+		{
+			file = "\fza_ah64_controls\scripting\functions\fcr";
+			class fcranimate{R;};
+			class fcrlongbow{R;};
 		}
 		class fire
 		{
@@ -90,6 +96,8 @@ class CfgFunctions
 			file = "\fza_ah64_controls\scripting\functions\ihadss";
 			class ihadssHandleControl {R;};
 			class ihadssDraw {R;};
+			class Ihadsstoggle {R;};
+			class monicletoggle {R;};
 		};
 		class laser
 		{
@@ -160,6 +168,9 @@ class CfgFunctions
 			class mpdUpdateDisplays {R;};
 			class mpdUpdateMap {R;};
 			class mpdUpdatePoints {R;};
+
+			class mpdcycleL {R;};
+			class mpdcycleR {R;};
 		};
 		class navigation {
 			file = "\fza_ah64_controls\scripting\functions\navigation";
@@ -175,6 +186,13 @@ class CfgFunctions
 			class targetingSched {R;};
 			class targetingSetAcquisitionSource {R;};
 			class targetingUpdate {R;};
+		};
+		class tsd
+		{
+			file = "\fza_ah64_controls\scripting\functions\tsd";
+			class tsdFilter {R;};
+			class tsdMap {R;};
+			class tsdRange {R;};
 		};
 		class ui
 		{
@@ -195,7 +213,7 @@ class CfgFunctions
 		class functions
 		{
 			file = "\fza_ah64_controls\scripting\functions";
-			class linearInterp { R; description = "Linear interpolate a 2d array of keyframe values"; };
+			class linearInterp {R; description = "Linear interpolate a 2d array of keyframe values"; };
 			class displayTime {R;};
 			class drawNumberSelections {R;};
 			class setPitchBank {R;};
@@ -203,8 +221,12 @@ class CfgFunctions
 			class relativeDirection {R;};
 			class velocityVector {R;};
 			class addKeybind {R;};
-			class playAudio { R; description = "Plays audio file"; };
-			class compensateSafezone { R;};
+			class playAudio {R; description = "Plays audio file"; };
+			class compensateSafezone {R;};
+			class Pdoortoggle {R;};
+			class Gdoortoggle {R;};
+			class Ufd {R;};
+			class loops {R;};
 		};
 	};
 };

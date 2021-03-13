@@ -1,5 +1,21 @@
-//Deleted stuff that wasn't actually used and fixed the ownship appearing on the FCR... - Brad
+/* ----------------------------------------------------------------------------
+Function: fza_fnc_fcrLongbow
 
+Description:
+    Fire control Radar script that takes target from sens radar and adds it to 
+    fza_ah64_targetlist & fza_ah64_fcrlist
+
+Parameters:
+
+Returns:
+    Nothing
+    
+Examples:
+    [_heli] spawn fza_fnc_fcrLongbow;
+
+Author:
+
+---------------------------------------------------------------------------- */
 #define AGMODE_GND 0
 #define AGMODE_AIR 1
 #define AGMODE_FNI 2 //FCR Not Installed (FNI)
