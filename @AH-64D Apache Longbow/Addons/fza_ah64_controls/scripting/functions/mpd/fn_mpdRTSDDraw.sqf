@@ -78,7 +78,6 @@ if (_heli getVariable "fza_ah64_tsdmode" == "atk") then {
 		if ([_x] call fza_fnc_targetIsADA) then {
 			_targetType = "ada";
 		};
-		
 		if (_pfzs !=  0 && {_x in ((_heli getVariable "fza_ah64_pfzs") select (_pfzs - 1))}) then {
 			_targetModifier = "_pfz";
 		};

@@ -36,11 +36,11 @@ if (_eng == "apu") then {
 _heli addmagazineturret[_mag, [-1]];
 
 _smokefx = "#particlesource"
-createVehicle getpos _heli;
+createVehiclelocal getpos _heli;
 _smokefx attachto[_heli, [0, 0, 0]];
 
 _firefx = "#particlesource"
-createVehicle getpos _heli;
+createVehiclelocal getpos _heli;
 _firefx attachto[_heli, [0, 0, 0]];
 
 _smokefx setParticleCircle[0, [0, 0, 0]];

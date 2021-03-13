@@ -52,7 +52,7 @@ switch (_control) do {
 		[_heli] call fza_fnc_targetingPFZCycle;
 	};
 	case "b3": {
-		[_heli] spawn fza_fnc_tsdFilter;
+		[_heli] spawn fza_fnc_tsdmap;
 	};
 	case "r1": {
 		[_heli, "OUT"] call fza_fnc_mpdHandleZoom;
@@ -61,7 +61,7 @@ switch (_control) do {
 		[_heli, "IN"] call fza_fnc_mpdHandleZoom;
 	};
 	case "r3": {
-		[_heli] execVM "\fza_ah64_controls\scripting\tsd_targfilter.sqf";
+		[_heli] spawn fza_fnc_tsdfilter;
 	};
 	case "t2": {
 		[_heli, 1, "ase"] call fza_fnc_mpdSetDisplay;
